@@ -1784,7 +1784,7 @@ h6 {
 }
 
 .main-block-title {
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
 
 .main-title {
@@ -1887,6 +1887,7 @@ h6 {
   background-repeat: no-repeat;
   min-height: 946px;
   display: flex;
+  margin-bottom: 70px;
 }
 .intro .container {
   max-width: 1376px;
@@ -1920,6 +1921,67 @@ h6 {
 .btn-intro {
   margin-right: 19px;
   font-size: 17px;
+}
+
+.about {
+  background: url(../img/World-Map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-main-block-title {
+  margin-bottom: 50px;
+}
+
+.menu-slider {
+  display: flex;
+  margin-bottom: 26px;
+}
+.menu-slider li {
+  border-radius: 30px;
+  transition: all 0.2s linear;
+}
+.menu-slider li a {
+  display: inline-block;
+  font-size: 13px;
+  white-space: nowrap;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #484848;
+  font-weight: 600;
+}
+.menu-slider li.active, .menu-slider li:hover {
+  background-color: #f42267;
+}
+.menu-slider li.active a, .menu-slider li:hover a {
+  color: #fff;
+}
+
+.about-p {
+  max-width: 564px;
+  margin-bottom: 50px;
+}
+
+.watch-img {
+  margin-left: 70px;
+}
+
+.general-btn {
+  background-color: #f42267;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 #ff5990;
+}
+
+.about-btn {
+  margin-left: 20px;
 }
 
 @media (max-width: 1024px) {
