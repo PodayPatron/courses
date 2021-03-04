@@ -133,6 +133,10 @@ font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
 	box-shadow: 1px 4px 16px rgba(1, 2, 2, 0.35);
+
+	&:hover {
+		background-color: #9c8fb4;
+	}
 }
 //**** END ****//
 
@@ -238,8 +242,8 @@ font-size: 18px;
     left: 43%;
 }
 
-.intro-main-title {
-	padding-top: 20%;
+.intro-main-block-title {
+	padding-top: 276px;
 	max-width: 775px;
 	//margin-bottom: 90px;
 }
@@ -279,4 +283,64 @@ font-size: 18px;
 	.menu {
 		display: none;
 	}
+
+	//**** intro ****//
+
+	.img-man {
+		display: none;
+	}
+}
+
+
+
+@media(max-width: 800px) {
+
+	//**** INTRO ****//
+
+	.intro-main-subtitle {
+		font-size: 30px;
+	}
+
+	.intro-main {
+		font-size: 50px;
+	}
+
+	.buttons {
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
+}
+
+@media(max-width: 620px) {
+
+	//**** Intro ****//
+
+	.intro-main-suptitle {
+		font-size: 32px;
+	}
+
+	.intro-main {
+		font-size: 42px;
+	}
+
+	.intro-p {
+		font-size: 19px;
+	}
+
+	.btn-intro {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 420px) {
+		//**** Intro ****//
+
+		.intro-main-suptitle {
+			font-size: 24px;
+		}
+	
+		.intro-main {
+			font-size: 30px;
+		}
 }
