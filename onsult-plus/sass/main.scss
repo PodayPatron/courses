@@ -6,7 +6,7 @@
 // ------------------------------------------------------------------------------------------------
 
 //**** Fonts ****//
-$font-body: 'Domine', serif;
+$font-domine: 'Domine', serif;
 $font-lato: 'Lato', sans-serif;
 $font-title: 'Montserrat', sans-serif;
 
@@ -33,9 +33,9 @@ $color-body: #838b8c;
 }
 
 body {
-	font-family: $font-body;
+	font-family: $font-title;
 	line-height: 1.4;
-	font-size: 15px;
+	font-size: 14px;
 	color: $color-body;
 	font-weight: 400;
 }
@@ -61,6 +61,8 @@ a {
 
 p {
 	margin-bottom: 20px;
+	font-size: 15px;
+	font-family: $font-domine;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -181,6 +183,10 @@ h6 {
 
 .header-info-box {
 	margin-right: 41px;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .info-text {
@@ -216,7 +222,7 @@ h6 {
 			color: #4e4e4e;
 			text-transform: uppercase;
 			display: inline-block;
-			padding: 21px;
+			padding: 18px;
 		}
 
 		&.active,
@@ -246,3 +252,94 @@ h6 {
 // ------------------------------------------------------------------------------------------------
 // INTRO
 // ------------------------------------------------------------------------------------------------
+
+.intro {
+	position: relative;
+	background: url(../img/intro-bg.jpg);
+	@include bg-img();
+	min-height: 700px;
+
+	.row {
+		.col-sm-6 {
+			background-color: #03b6e7;
+
+			&.active,
+			&:hover {
+				background-color: #00a6d3;
+				cursor: pointer;
+			}
+
+			&:last-child {
+				display: flex;
+    			align-items: center;
+    			justify-content: center;
+			}
+		}
+
+	}
+}
+
+.banner {
+	position: absolute;
+	left: 18vw;
+	bottom: 0;
+	max-width: 458px;
+	background-color: #ffac56;
+	text-transform: uppercase;
+	
+}
+
+.banner-main-block {
+	padding: 27px 22px;
+}
+
+.banner-title {
+	font-family: $font-lato;
+	font-weight: 300;
+}
+
+.banner-subtitle {
+	margin-bottom: 0;
+}
+
+
+
+.col-inner {
+	display: flex;
+	justify-content: space-around;
+	padding: 39px 32px;
+}
+
+.text-banner,
+.arrow-right {
+	color: #fff;
+}
+
+.banner-info {
+	margin-right: 27px;
+}
+
+.arrow-right {
+	display: flex;
+    align-items: flex-end;
+	margin-right: -18px;
+}
+
+.banner-logo {
+	margin-bottom: 10px;
+}
+
+.circle {
+	display: inline-block;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+	i {
+		min-width: 15px;
+		min-height: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
