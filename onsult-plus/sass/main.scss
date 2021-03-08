@@ -198,7 +198,8 @@ h6 {
 	color: #a2a5a6;
 }
 
-.header-top-info {
+.header-top-info,
+.steps-col-title {
 	text-transform: uppercase;
 }
 
@@ -399,6 +400,10 @@ h6 {
 // ABOUT
 // ------------------------------------------------------------------------------------------------
 
+.about {
+	margin-bottom: 78px;
+}
+
 .block-title {
 	text-transform: uppercase;
 	line-height: 1;
@@ -435,6 +440,35 @@ h6 {
     left: 97px;
 }
 
+// ------------------------------------------------------------------------------------------------
+// STEPS
+// ------------------------------------------------------------------------------------------------
+
+.steps {
+	padding-top: 95px;
+	padding-bottom: 95px;
+}
+
+.steps-block-title {
+	margin-bottom: 19px;
+}
+
+.steps-info {
+	margin-bottom: 20px;
+}
+
+.steps-logo {
+	margin-bottom: 19px;
+}
+
+.steps-col-title {
+	margin-bottom: 25px;
+}
+
+.col-num {
+	color: #16d428;
+	margin-bottom: 0;
+}
 
 
 
@@ -494,8 +528,20 @@ h6 {
 }
 
 @media(max-width: 520px) {
+
+	.about {
+		margin-bottom: 35px;
+	}
+
 	.img-medal {
 		display: none;
+	}
+
+	//steps
+
+	.steps {
+		padding-top: 35px;
+		padding-bottom: 35px;
 	}
 }
 
