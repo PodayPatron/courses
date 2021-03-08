@@ -1,0 +1,248 @@
+@import './bootstrap-grid.scss';
+@import "./reset.scss";
+
+// ------------------------------------------------------------------------------------------------
+// SITE
+// ------------------------------------------------------------------------------------------------
+
+//**** Fonts ****//
+$font-body: 'Domine', serif;
+$font-lato: 'Lato', sans-serif;
+$font-title: 'Montserrat', sans-serif;
+
+
+//**** COLORS ****//
+$color-body: #838b8c;
+
+
+//**** MIXINS ****//
+
+@mixin bg-img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin link {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+body {
+	font-family: $font-body;
+	line-height: 1.4;
+	font-size: 15px;
+	color: $color-body;
+	font-weight: 400;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+img {
+	height: auto;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	transition: all .2s linear;
+}
+
+p {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 30px;
+    color: #343a3b;
+	font-family: $font-title;
+	font-weight: 600;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px
+}
+
+h6 {
+	font-size: 12px;
+}
+
+// ------------------------------------------
+// COLOR SCHEME LIGHT
+// ------------------------------------------
+
+.color-scheme-light {
+
+	h1,h2,h3,h4,h5,h6 {
+		color: #FFF;
+	}
+
+	p, ul {
+		color: rgba(255,255,255,.9);
+	}
+}
+
+// ------------------------------------------
+// HELPER CLASSES
+// ------------------------------------------
+
+.text-center {
+	text-align: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.light-background {
+	background-color: #e7eff1;
+}
+
+.blue-background {
+	background-color: #03b6e7;
+}
+
+.black-background {
+	background-color: #262829;
+}
+
+//--------------------------------
+// HEADER COLUMNS
+//--------------------------------
+.header-col {
+	display: flex;
+	flex-grow: 1;
+}
+
+.header-row-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-col-left {
+	padding-right: 15px;
+}
+
+.header-col-right {
+	padding-left: 15px;
+	justify-content: flex-end;
+}
+
+// ------------------------------------------------------------------------------------------------
+// HEADER SITE
+// ------------------------------------------------------------------------------------------------
+
+//**** HEADER-TOP ****//
+
+.header-top {
+	display: flex;
+	align-items: center;
+
+	.header-row-inner {
+		height: 40px;
+	}
+}
+
+.header-info-box {
+	margin-right: 41px;
+}
+
+.info-text {
+	color: #a2a5a6;
+}
+
+.header-top-info {
+	text-transform: uppercase;
+}
+
+//**** HEADER-GENERAL ****//
+
+.header-general {
+	display: flex;
+	align-items: center;
+
+	.header-row-inner {
+		height: 101px;
+	}
+}
+
+//**** MAIN NAVIGATION ****//
+
+.main-nav {
+	display: flex;
+	margin-bottom: 0;
+	padding-left: 0;
+	
+	li {
+
+		a {
+			font-size: 14px;
+			color: #4e4e4e;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 21px;
+		}
+
+		&.active,
+		&:hover {
+
+			a {
+				color:#ffac55;
+			}
+		}
+	}
+}
+
+.header-col-left {
+
+	.main-nav {
+		margin-left: -15px;
+	}
+}
+
+.header-col-right {
+
+	.main-nav {
+		margin-right: -15px;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// INTRO
+// ------------------------------------------------------------------------------------------------
