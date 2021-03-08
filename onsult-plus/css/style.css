@@ -2030,8 +2030,9 @@ h6 {
 }
 
 .btn-about {
-  margin-right: 20px;
   padding: 13px 25px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .about-img {
@@ -2058,6 +2059,9 @@ h6 {
   }
 }
 @media (max-width: 990px) {
+  .intro {
+    margin-bottom: 30px;
+  }
   .intro .row .col-sm-6,
 .intro .row .col-with-btn {
     display: none;
@@ -2073,6 +2077,11 @@ h6 {
 }
 @media (max-width: 770px) {
   .header-top {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .img-medal {
     display: none;
   }
 }
