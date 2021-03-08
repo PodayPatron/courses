@@ -1889,11 +1889,16 @@ h6 {
   min-height: 700px;
 }
 .intro .row .col-sm-6 {
+  border-right: 1px solid #00a6d3;
+  border-bottom: 1px solid #00a6d3;
   background-color: #03b6e7;
 }
 .intro .row .col-sm-6.active, .intro .row .col-sm-6:hover {
   background-color: #00a6d3;
   cursor: pointer;
+}
+.intro .row .col-sm-6.active .btn, .intro .row .col-sm-6:hover .btn {
+  background-color: #ffac56;
 }
 .intro .row .col-sm-6:last-child {
   display: flex;
@@ -1901,11 +1906,21 @@ h6 {
   justify-content: center;
 }
 
+.btn {
+  display: inline-block;
+  padding: 16px 33px;
+  font-size: 13px;
+  color: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background-color: #16d428;
+}
+
 .banner {
   position: absolute;
   left: 18vw;
   bottom: 0;
-  max-width: 458px;
+  max-width: 460px;
   background-color: #ffac56;
   text-transform: uppercase;
 }
@@ -1926,7 +1941,7 @@ h6 {
 .col-inner {
   display: flex;
   justify-content: space-around;
-  padding: 39px 32px;
+  padding: 37px 32px;
 }
 
 .text-banner,
