@@ -1936,6 +1936,9 @@ h6 {
   margin-bottom: 10px;
   background-color: #16d428;
 }
+.btn:hover {
+  background-color: #03b6e7;
+}
 
 .banner {
   position: absolute;
@@ -2100,6 +2103,10 @@ h6 {
 
   .banner {
     left: 0;
+    cursor: pointer;
+  }
+  .banner:hover {
+    opacity: 0.9;
   }
 
   .arrow-up {

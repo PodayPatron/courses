@@ -318,6 +318,10 @@ h6 {
     border-radius: 30px;
     margin-bottom: 10px;
     background-color: #16d428;
+
+	&:hover {
+		background-color: #03b6e7;
+	}
 }
 
 .banner {
@@ -508,6 +512,11 @@ h6 {
 
 	.banner {
 		left: 0;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.9;
+		}
 	}
 
 	.arrow-up {
