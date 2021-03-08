@@ -1710,7 +1710,7 @@ textarea {
 
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
   font-size: 14px;
   color: #838b8c;
   font-weight: 400;
@@ -1775,7 +1775,7 @@ h5 {
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .color-scheme-light h1, .color-scheme-light h2, .color-scheme-light h3, .color-scheme-light h4, .color-scheme-light h5, .color-scheme-light h6 {
@@ -1787,6 +1787,10 @@ h6 {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-center {
@@ -1835,6 +1839,7 @@ h6 {
 
 .header-info-box {
   margin-right: 41px;
+  cursor: pointer;
 }
 .header-info-box:last-child {
   margin-right: 0;
@@ -1900,6 +1905,7 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 700px;
+  margin-bottom: 95px;
 }
 .intro .row .col-sm-6 {
   border-right: 1px solid #00a6d3;
@@ -1921,6 +1927,7 @@ h6 {
 
 .btn {
   display: inline-block;
+  text-transform: uppercase;
   padding: 16px 33px;
   font-size: 13px;
   color: #ffffff;
@@ -1966,7 +1973,7 @@ h6 {
 .col-inner {
   display: flex;
   justify-content: space-around;
-  padding: 37px 32px;
+  padding: 35px 32px;
 }
 
 .text-banner,
@@ -2000,6 +2007,41 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.block-title {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.main-subtitle {
+  color: #898e8f;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.block-title-about {
+  padding-top: 11px;
+  margin-bottom: 33px;
+}
+
+.about-text {
+  margin-bottom: 44px;
+}
+
+.btn-about {
+  margin-right: 20px;
+  padding: 13px 25px;
+}
+
+.about-img {
+  position: relative;
+}
+
+.img-medal {
+  position: absolute;
+  top: 157px;
+  left: 97px;
 }
 
 @media (max-width: 1024px) {

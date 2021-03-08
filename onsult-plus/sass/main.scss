@@ -34,7 +34,7 @@ $color-body: #838b8c;
 
 body {
 	font-family: $font-title;
-	line-height: 1.4;
+	line-height: 1.6;
 	font-size: 14px;
 	color: $color-body;
 	font-weight: 400;
@@ -101,7 +101,7 @@ h5 {
 }
 
 h6 {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 // ------------------------------------------
@@ -125,6 +125,10 @@ h6 {
 
 .text-center {
 	text-align: center;
+}
+
+.text-right {
+	text-align: right;
 }
 
 .align-center {
@@ -183,6 +187,7 @@ h6 {
 
 .header-info-box {
 	margin-right: 41px;
+	cursor: pointer;
 
 	&:last-child {
 		margin-right: 0;
@@ -274,6 +279,7 @@ h6 {
 	background: url(../img/intro-bg.jpg);
 	@include bg-img();
 	min-height: 700px;
+	margin-bottom: 95px;
 
 	.row {
 		.col-sm-6 {
@@ -304,6 +310,7 @@ h6 {
 
 .btn {
 	display: inline-block;
+	text-transform: uppercase;
 	padding: 16px 33px;
 	font-size: 13px;
 	color: #ffffff;
@@ -350,7 +357,7 @@ h6 {
 .col-inner {
 	display: flex;
 	justify-content: space-around;
-	padding: 37px 32px;
+	padding: 35px 32px;
 }
 
 .text-banner,
@@ -388,7 +395,44 @@ h6 {
 }
 
 
+// ------------------------------------------------------------------------------------------------
+// ABOUT
+// ------------------------------------------------------------------------------------------------
 
+.block-title {
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.main-subtitle {
+	color: #898e8f;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+.block-title-about {
+	padding-top: 11px;
+	margin-bottom: 33px;
+}
+
+.about-text {
+	margin-bottom: 44px;
+}
+
+.btn-about {
+	margin-right: 20px;
+	padding: 13px 25px
+}
+
+.about-img {
+	position: relative;
+}
+
+.img-medal {
+	position: absolute;
+    top: 157px;
+    left: 97px;
+}
 
 
 
