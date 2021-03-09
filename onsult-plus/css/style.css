@@ -1858,7 +1858,8 @@ h6 {
 }
 
 .header-top-info,
-.steps-col-title {
+.steps-col-title,
+.blog-item-title {
   text-transform: uppercase;
 }
 
@@ -2172,8 +2173,9 @@ h6 {
 .triangle::before {
   content: "+";
   position: absolute;
-  bottom: -8px;
+  bottom: 0;
   left: 8px;
+  line-height: 1;
   font-size: 30px;
   font-weight: 700;
   color: #fff;
@@ -2214,11 +2216,25 @@ h6 {
 }
 
 .client-account {
+  position: relative;
   display: flex;
   align-items: center;
+  opacity: 0.6;
+  transition: 0.2s all linear;
+}
+.client-account a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .client-account:not(:first-child) {
   margin-left: 92px;
+}
+.client-account.active, .client-account:hover {
+  opacity: 1;
 }
 
 .client-first-name {
@@ -2236,6 +2252,7 @@ h6 {
 }
 
 .circle-btn-slider i {
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   font-size: 16px;
   color: #ffffff;
@@ -2246,6 +2263,76 @@ h6 {
 }
 .circle-btn-slider i.active, .circle-btn-slider i:hover {
   color: #16d428;
+}
+
+.blog {
+  overflow-x: hidden;
+}
+
+.left-info-block {
+  padding-top: 80px;
+}
+
+.blog-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-menu {
+  display: flex;
+  margin-top: 16px;
+}
+.tab-menu li {
+  margin-right: 12px;
+}
+.tab-menu li a {
+  display: inline-block;
+  padding: 4px 26px;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 150px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #606668;
+  font-size: 12px;
+  border: 2px solid #989fa0;
+}
+.tab-menu li.active a, .tab-menu li:hover a {
+  border: 2px solid #ffac56;
+}
+
+.blog-item {
+  padding-top: 45px;
+  padding-bottom: 14px;
+}
+
+.blog-item-title {
+  margin-bottom: 18px;
+}
+.blog-item-title a {
+  color: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.blog-item-title a:hover {
+  opacity: 0.8;
+}
+
+.date {
+  font-family: "Domine", serif;
+}
+
+.date-num {
+  color: #16d428;
+}
+
+.blog-img {
+  background: url(../img/blog-foto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 747px;
+  min-width: 985px;
 }
 
 @media (max-width: 1024px) {
@@ -2311,6 +2398,10 @@ h6 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .left-info-block {
+    padding-top: 25px;
+  }
 }
 @media (max-width: 770px) {
   .header-top {
@@ -2329,6 +2420,10 @@ h6 {
   .steps {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+
+  .blog-img {
+    display: none;
   }
 }
 @media (max-width: 420px) {

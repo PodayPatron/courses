@@ -207,7 +207,8 @@ h6 {
 }
 
 .header-top-info,
-.steps-col-title {
+.steps-col-title,
+.blog-item-title {
 	text-transform: uppercase;
 }
 
@@ -595,8 +596,9 @@ h6 {
 	&::before {
 		content: '+';
 		position: absolute;
-		bottom: -8px;
+		bottom: 0;
 		left: 8px;
+		line-height: 1;
 		font-size: 30px;
 		font-weight: 700;
 		color: #fff;
@@ -644,12 +646,28 @@ h6 {
 }
 
 .client-account {
+	position: relative;
 	display: flex;
 	align-items: center;
+	opacity: 0.6;
+	transition: .2s all linear;
+
+	a {
+
+		&::after {
+			@include link();
+		}
+	}
 
 	&:not(:first-child) {
 		margin-left: 92px;
 	}
+
+	&.active,
+	&:hover {
+		opacity: 1;
+	}
+
 }
 
 .client-first-name {
@@ -667,8 +685,9 @@ h6 {
 }
 
 .circle-btn-slider {
-
+	
 	i {
+		transition: all .3s ease-in-out;
 		cursor: pointer;
 		font-size: 16px;
 		color: #ffffff;
@@ -683,6 +702,92 @@ h6 {
 			color: #16d428;
 		}
 	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// BLOG
+// ------------------------------------------------------------------------------------------------
+.blog {
+	overflow-x: hidden;
+}
+
+.left-info-block {
+	padding-top: 80px;
+}
+
+.blog-inner {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	
+}
+
+.tab-menu {
+	display: flex;
+	margin-top: 16px;
+
+	li {
+		margin-right: 12px;
+
+		a {
+			display: inline-block;
+			padding: 4px 26px;	
+			white-space: nowrap;
+			width: 100%;
+			min-width: 150px;
+			border-radius: 30px;
+			text-transform: uppercase;
+			color: #606668;
+			font-size: 12px;
+			border: 2px solid #989fa0;
+
+		}
+
+		&.active,
+		&:hover {
+
+			a {
+				border: 2px solid #ffac56;
+			}
+		}
+	}
+}
+
+.blog-item {
+	padding-top: 45px;
+	padding-bottom: 14px;
+}
+
+.blog-item-title {
+	margin-bottom: 18px;
+
+	a {
+		color: inherit;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	
+}
+
+.date {
+	font-family: $font-domine;
+}
+
+.date-num {
+	color: #16d428;
+}
+
+.blog-img {
+	background: url(../img/blog-foto.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 747px;
+	min-width: 985px;
 }
 
 
@@ -769,6 +874,12 @@ h6 {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+
+	//BLOG
+
+	.left-info-block {
+		padding-top: 25px;
+	}
 }
 
 @media(max-width: 770px) {
@@ -795,6 +906,12 @@ h6 {
 	.steps {
 		padding-top: 35px;
 		padding-bottom: 35px;
+	}
+
+	//blog
+
+	.blog-img {
+		display: none;
 	}
 }
 
