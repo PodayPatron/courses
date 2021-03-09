@@ -208,7 +208,8 @@ h6 {
 
 .header-top-info,
 .steps-col-title,
-.blog-item-title {
+.blog-item-title,
+.contact-title {
 	text-transform: uppercase;
 }
 
@@ -377,7 +378,8 @@ h6 {
 	font-weight: 300;
 }
 
-.banner-subtitle {
+.banner-subtitle,
+.contact-title {
 	margin-bottom: 0;
 }
 
@@ -709,6 +711,7 @@ h6 {
 // ------------------------------------------------------------------------------------------------
 .blog {
 	overflow-x: hidden;
+	margin-bottom: 80px;
 }
 
 .left-info-block {
@@ -790,10 +793,43 @@ h6 {
 	min-width: 985px;
 }
 
+// ------------------------------------------------------------------------------------------------
+// CONTACT
+// ------------------------------------------------------------------------------------------------
+.contact {
+	margin-bottom: 75px;
+
+	.row {
+
+		.col-lg-4 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.contact-inner {
+	display: flex;
+	border: 1px solid #e1eaec;
+	padding: 32px;
+}
+
+.contact-block {
+	margin-bottom: 36px;
+}
+
+.contact-img {
+	margin-right: 40px;
+	flex-shrink: 0;
+}
+
 
 @media(max-width: 1024px) {
 
 	// HEADER
+
+	.projects {
+		margin-bottom: 25px;
+	}
 
 	.main-nav {
 		display: none;
@@ -805,6 +841,10 @@ h6 {
 
 	.header-col-right {
 		justify-content: center;
+	}
+
+	.contact {
+		margin-bottom: 10px;
 	}
 }
 
@@ -887,6 +927,10 @@ h6 {
 	// HEADER
 
 	.header-top {
+		display: none;
+	}
+
+	.tab-menu {
 		display: none;
 	}
 }
