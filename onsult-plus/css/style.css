@@ -1755,7 +1755,9 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 h2 {
@@ -2464,13 +2466,36 @@ h6 {
   color: #fff;
 }
 
-.about-intro {
+.page-about-intro {
   background: url(../img/index-about-girl.png);
   min-height: 292px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  align-items: center;
+}
+
+.page-main-title {
+  font-weight: 700;
+}
+
+.bg-circle {
+  display: inline-flex;
+  min-width: 54px;
+  min-height: 54px;
+  border-radius: 50%;
+  background-color: #ffac55;
+}
+
+.page-about-block {
+  display: flex;
+  align-items: center;
+}
+
+.page-about-main-title {
+  position: relative;
+  margin-left: -36px;
 }
 
 @media (max-width: 1024px) {
