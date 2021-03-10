@@ -1784,6 +1784,13 @@ h6 {
 .color-scheme-light p, .color-scheme-light ul {
   color: rgba(255, 255, 255, 0.9);
 }
+.color-scheme-light input[type=submit] {
+  color: #fff;
+}
+
+.color-scheme-p p, .color-scheme-p ul {
+  color: #838b8c;
+}
 
 .text-center {
   text-align: center;
@@ -2375,6 +2382,71 @@ h6 {
 .contact-img {
   margin-right: 40px;
   flex-shrink: 0;
+}
+
+.main-footer {
+  padding-top: 92px;
+  padding-bottom: 77px;
+}
+
+.footer-title-column {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-suptitle {
+  margin-bottom: 44px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  max-width: 514px;
+  background-color: #323334;
+  border-radius: 30px;
+}
+.footer-form input[type=text] {
+  padding-left: 34px;
+  padding-right: 20px;
+  font-size: 13px;
+  width: 100%;
+  max-width: 415px;
+  background: transparent;
+}
+.footer-form input[type=submit] {
+  border-radius: 30px;
+  padding: 15px 37px;
+  text-transform: uppercase;
+  background-color: #16d428;
+  transition: all 0.3s linear;
+}
+.footer-form input[type=submit]:hover {
+  background-color: #03b6e7;
+}
+.footer-form input[type=text],
+.footer-form input[type=submit] {
+  height: 52px;
+  border: none;
+}
+
+.block-title-footer {
+  margin-bottom: 21px;
+}
+
+.footer-vertical-menu li {
+  font-size: 13px;
+}
+.footer-vertical-menu li a {
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  color: inherit;
+}
+.footer-vertical-menu li:hover a {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
