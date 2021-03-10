@@ -189,7 +189,6 @@ h6 {
 
 .header-col-right {
 	padding-left: 15px;
-	justify-content: flex-end;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -207,12 +206,24 @@ h6 {
 	}
 }
 
+.header-top-inner {
+	display: flex;
+    justify-content: space-between;
+}
+
 .header-info-box {
-	margin-right: 41px;
-	cursor: pointer;
+	padding-right: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+    display: flex;
+	border-right: 1px solid #505253;
 
 	&:last-child {
 		margin-right: 0;
+		border-right: none;
+		padding-right: 0;
 	}
 }
 
@@ -304,7 +315,6 @@ h6 {
 // ------------------------------------------------------------------------------------------------
 
 .intro {
-	position: relative;
 	background: url(../img/intro-bg.jpg);
 	@include bg-img();
 	min-height: 700px;
@@ -335,6 +345,11 @@ h6 {
 	}
 }
 
+.container-position {
+	position: relative;
+	min-height: 700px;
+}
+
 .btn {
 	display: inline-block;
 	text-transform: uppercase;
@@ -363,7 +378,7 @@ h6 {
 
 .banner {
 	position: absolute;
-	left: 18vw;
+	left: 0;
 	bottom: 0;
 	max-width: 460px;
 	background-color: #ffac56;
@@ -926,6 +941,17 @@ h6 {
 	}
 }
 
+// ------------------------------------------------------------------------------------------------
+// ABOUT SITE
+// ------------------------------------------------------------------------------------------------
+
+.about-intro {
+	background: url(../img/index-about-girl.png);
+	min-height: 292px;
+	@include bg-img();
+	background-size: contain;
+}
+
 
 @media(max-width: 1024px) {
 
@@ -1071,6 +1097,10 @@ h6 {
 	}
 
 	.tab-menu {
+		display: none;
+	}
+
+	.banner {
 		display: none;
 	}
 }

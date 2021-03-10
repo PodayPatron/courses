@@ -1845,7 +1845,6 @@ h6 {
 
 .header-col-right {
   padding-left: 15px;
-  justify-content: flex-end;
 }
 
 .header-top {
@@ -1856,12 +1855,24 @@ h6 {
   height: 40px;
 }
 
+.header-top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-info-box {
-  margin-right: 41px;
+  padding-right: 25px;
+  padding-left: 25px;
   cursor: pointer;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  border-right: 1px solid #505253;
 }
 .header-info-box:last-child {
   margin-right: 0;
+  border-right: none;
+  padding-right: 0;
 }
 
 .info-text {
@@ -1922,7 +1933,6 @@ h6 {
 }
 
 .intro {
-  position: relative;
   background: url(../img/intro-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -1948,6 +1958,11 @@ h6 {
   border-right: 1px solid #00a6d3;
 }
 
+.container-position {
+  position: relative;
+  min-height: 700px;
+}
+
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -1970,7 +1985,7 @@ h6 {
 
 .banner {
   position: absolute;
-  left: 18vw;
+  left: 0;
   bottom: 0;
   max-width: 460px;
   background-color: #ffac56;
@@ -2449,6 +2464,15 @@ h6 {
   color: #fff;
 }
 
+.about-intro {
+  background: url(../img/index-about-girl.png);
+  min-height: 292px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media (max-width: 1024px) {
   .projects {
     margin-bottom: 25px;
@@ -2553,6 +2577,10 @@ h6 {
   }
 
   .tab-menu {
+    display: none;
+  }
+
+  .banner {
     display: none;
   }
 }
