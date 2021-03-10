@@ -505,8 +505,45 @@ h6 {
 
 .img-medal {
 	position: absolute;
-    top: 157px;
-    left: 97px;
+    top: calc(100% + 40px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 237px;
+	border: 6px solid #ffffff;
+	background-color: #03b6e7;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medal-inner {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	min-width: 190px;
+    min-height: 225px;
+}
+
+.img-icon-medal {
+	margin-bottom: 31px;
+}
+
+.years-exp,
+.years-text {
+	color: #fff;
+}
+
+.years-exp {
+	font-size: 75px;
+	line-height: 1;
+}
+
+.years-text {
+	font-size: 13px;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -852,6 +889,7 @@ h6 {
 	display: flex;
 	border: 1px solid #e1eaec;
 	padding: 32px;
+	flex-wrap: wrap;
 }
 
 .contact-block {
@@ -870,6 +908,17 @@ h6 {
 .main-footer {
 	padding-top: 92px;
 	padding-bottom: 77px;
+
+	.row {
+		.col-lg-6,
+		.col-lg-2 {
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .footer-title-column {
@@ -889,6 +938,7 @@ h6 {
 	max-width: 514px;
 	background-color: #323334;
 	border-radius: 30px;
+	margin-bottom: 20px;
 
 	input[type="text"] {
 		padding-left: 34px;
@@ -897,7 +947,9 @@ h6 {
 		width: 100%;
 		max-width: 415px;
 		background: transparent;
+		color: #5e5e5e;
 	}
+
 	input[type="submit"] {
 		border-radius: 30px;
 		padding: 15px 37px;
@@ -1050,12 +1102,12 @@ h6 {
 	//REVIEWS
 
 	.reviews {
-		padding-top: 25px;
-    	padding-bottom: 25px;
+		padding-top: 55px;
+    	padding-bottom: 55px;
 
 		.row {
-			padding-top: 5px;
-			padding-bottom: 5px;
+			padding-top: 15px;
+			padding-bottom: 15px;
 		}
 	}
 	
@@ -1082,9 +1134,14 @@ h6 {
 	}
 
 	//BLOG
+	
+	.blog {
+		margin-bottom: 50px;
+	}
 
 	.left-info-block {
-		padding-top: 25px;
+		padding-top: 55px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -1110,8 +1167,8 @@ h6 {
 	//steps
 
 	.steps {
-		padding-top: 35px;
-		padding-bottom: 35px;
+		padding-top: 55px;
+		padding-bottom: 55px;
 	}
 
 	//blog
@@ -1126,6 +1183,12 @@ h6 {
 
 	.banner {
 		display: none;
+	}
+
+	.footer-form {
+		input[type="submit"] {
+			padding: 15px 20px;
+		}
 	}
 }
 
