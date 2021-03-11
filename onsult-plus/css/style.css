@@ -1918,7 +1918,8 @@ input[type=submit]:hover {
 .header-top-info,
 .steps-col-title,
 .blog-item-title,
-.contact-title {
+.contact-title,
+.meneger-position {
   text-transform: uppercase;
 }
 
@@ -2669,6 +2670,35 @@ input[type=submit]:hover {
 
 .meneger-info {
   margin-bottom: 15px;
+}
+
+.meneger-name {
+  font-weight: 700;
+}
+
+.social {
+  padding-top: 10px;
+  border-top: 1px solid #F9FBFB;
+}
+.social .social-link {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.link-facebook {
+  color: #6880B0;
+}
+
+.link-twitter {
+  color: #51ABF1;
+}
+
+.link-google {
+  color: #E57970;
+}
+
+.about-meneger {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1024px) {
