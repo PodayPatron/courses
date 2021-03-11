@@ -114,12 +114,25 @@ h6 {
 // FORM
 // ------------------------------------------
 
+input[type="text"],
+input[type="submit"] {
+	height: 52px;
+	border: 0;
+	border-bottom: 3px solid rgb(50, 51, 52);
+	transition: border 0.3s ease-in-out;
+}
+
+
 input[type="text"] {
 	background-color: rgb(50, 51, 52);
 	font-size: 13px;
 	width: 100%;
 	max-width: 415px;
 	color: #5e5e5e;
+
+	&:focus {
+		border-color: #f6a149;
+	}
 }
 
 input[type="submit"] {
@@ -134,11 +147,6 @@ input[type="submit"] {
 	}
 }
 
-input[type="text"],
-input[type="submit"] {
-	height: 52px;
-	border: none;
-}
 
 // ------------------------------------------
 // COLOR SCHEME LIGHT
@@ -555,14 +563,18 @@ input[type="submit"] {
 }
 
 .medal-inner {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
 	margin-top: 20px;
     margin-bottom: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	min-width: 190px;
     min-height: 225px;
+}
+
+.medal-inner,
+.page-about-medal-style {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-icon-medal {
@@ -1059,8 +1071,66 @@ input[type="submit"] {
 // WHAT WE DO
 // ------------------------------------------
 
+.what-we-do {
+
+	.row {
+
+		.col-lg-6 {
+			margin-bottom: 25px;
+		}
+	}
+}
+
 .page-block-what {
 	margin-bottom: 29px;
+}
+
+.col-inner-block {
+	display: flex;
+}
+
+.page-about-img {
+	margin-top: -84px;
+	box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+}
+
+.page-about-years {
+	padding-top: 30px;
+    padding-bottom: 55px;
+}
+
+.page-about-medal-style {
+	min-width: 241px;
+}
+
+.page-about-yers-exp {
+	font-size: 48px;
+}
+
+.page-about-what-col-text {
+	max-width: 499px;
+	line-height: 1.8;
+}
+
+.padding-right {
+	padding-right: 15px;
+}
+
+// ------------------------------------------
+// ABOUT STEPS
+// ------------------------------------------
+
+.page-block-steps {
+	margin-bottom: 30px;
+}
+
+.page-about-steps {
+	padding-bottom: 72px;
+	margin-top: -120px;
+}
+
+.page-steps-logo {
+	margin-bottom: 27px;
 }
 
 @media(max-width: 1024px) {
@@ -1176,6 +1246,19 @@ input[type="submit"] {
 	.left-info-block {
 		padding-top: 55px;
 		padding-bottom: 50px;
+	}
+
+	// ------------------------------------------
+	// PAGE ABOUT
+	// ------------------------------------------
+
+	.col-inner-block {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.page-about-img {
+		margin-top: 0;
 	}
 }
 
