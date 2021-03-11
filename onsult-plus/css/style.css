@@ -2005,7 +2005,6 @@ input[type=submit]:hover {
   font-size: 13px;
   color: #ffffff;
   border-radius: 30px;
-  margin-bottom: 10px;
   background-color: #16d428;
 }
 .btn:hover {
@@ -2622,10 +2621,27 @@ input[type=submit]:hover {
 .page-about-steps {
   padding-bottom: 72px;
   margin-top: -120px;
+  margin-bottom: 94px;
 }
 
 .page-steps-logo {
   margin-bottom: 27px;
+}
+
+.mission .row {
+  margin-bottom: 77px;
+}
+
+.page-block-mission {
+  margin-bottom: 32px;
+}
+
+.img-mission {
+  margin-bottom: 43px;
+}
+
+.page-about-btn-block {
+  margin-bottom: 92px;
 }
 
 @media (max-width: 1024px) {
