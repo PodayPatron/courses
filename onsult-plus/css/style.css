@@ -1756,8 +1756,6 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 
 h1 {
   font-size: 36px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
 }
 
 h2 {
@@ -1778,6 +1776,36 @@ h5 {
 
 h6 {
   font-size: 14px;
+}
+
+.pages-big-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+input[type=text] {
+  background-color: #323334;
+  font-size: 13px;
+  width: 100%;
+  max-width: 415px;
+  color: #5e5e5e;
+}
+
+input[type=submit] {
+  border-radius: 30px;
+  padding: 15px 37px;
+  text-transform: uppercase;
+  background-color: #16d428;
+  transition: all 0.3s linear;
+}
+input[type=submit]:hover {
+  background-color: #03b6e7;
+}
+
+input[type=text],
+input[type=submit] {
+  height: 52px;
+  border: none;
 }
 
 .color-scheme-light h1, .color-scheme-light h2, .color-scheme-light h3, .color-scheme-light h4, .color-scheme-light h5, .color-scheme-light h6 {
@@ -2108,6 +2136,9 @@ h6 {
   top: calc(100% + 40px);
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.img-medal-style {
   width: 100%;
   max-width: 237px;
   border: 6px solid #ffffff;
@@ -2461,56 +2492,45 @@ h6 {
   margin-bottom: 44px;
 }
 
-.footer-form {
+.subscribe {
   display: flex;
   align-items: center;
   height: 52px;
   width: 100%;
   max-width: 514px;
-  background-color: #323334;
-  border-radius: 30px;
   margin-bottom: 20px;
 }
-.footer-form input[type=text] {
+.subscribe input[type=text] {
   padding-left: 34px;
   padding-right: 20px;
+  background-color: #323334;
   font-size: 13px;
+  border-radius: 30px;
   width: 100%;
   max-width: 415px;
-  background: transparent;
   color: #5e5e5e;
 }
-.footer-form input[type=submit] {
+.subscribe input[type=submit] {
   border-radius: 30px;
   padding: 15px 37px;
-  text-transform: uppercase;
-  background-color: #16d428;
-  transition: all 0.3s linear;
-}
-.footer-form input[type=submit]:hover {
-  background-color: #03b6e7;
-}
-.footer-form input[type=text],
-.footer-form input[type=submit] {
-  height: 52px;
-  border: none;
+  margin-left: -30px;
 }
 
 .block-title-footer {
   margin-bottom: 21px;
 }
 
-.footer-vertical-menu li {
+.vertical-menu li {
   font-size: 13px;
 }
-.footer-vertical-menu li a {
+.vertical-menu li a {
   display: inline-block;
   padding-top: 6px;
   padding-bottom: 6px;
   text-transform: uppercase;
   color: inherit;
 }
-.footer-vertical-menu li:hover a {
+.vertical-menu li:hover a {
   color: #fff;
 }
 
@@ -2522,6 +2542,7 @@ h6 {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .page-main-title {
@@ -2536,7 +2557,7 @@ h6 {
   background-color: #ffac55;
 }
 
-.page-about-block {
+.page-block-about {
   display: flex;
   align-items: center;
 }
@@ -2544,6 +2565,10 @@ h6 {
 .page-about-main-title {
   position: relative;
   margin-left: -36px;
+}
+
+.page-block-what {
+  margin-bottom: 29px;
 }
 
 @media (max-width: 1024px) {

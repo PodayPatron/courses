@@ -82,8 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 36px;
-	font-family: $font-lato;
-	font-weight: 300;
 }
 
 h2 {
@@ -104,6 +102,42 @@ h5 {
 
 h6 {
 	font-size: 14px;
+}
+
+.pages-big-title {
+	font-family: $font-lato;
+	font-weight: 300;
+}
+
+
+// ------------------------------------------
+// FORM
+// ------------------------------------------
+
+input[type="text"] {
+	background-color: rgb(50, 51, 52);
+	font-size: 13px;
+	width: 100%;
+	max-width: 415px;
+	color: #5e5e5e;
+}
+
+input[type="submit"] {
+	border-radius: 30px;
+	padding: 15px 37px;
+	text-transform: uppercase;
+	background-color: #16d428;
+	transition: all .3s linear;
+
+	&:hover {
+		background-color: #03b6e7;
+	}
+}
+
+input[type="text"],
+input[type="submit"] {
+	height: 52px;
+	border: none;
 }
 
 // ------------------------------------------
@@ -508,6 +542,9 @@ h6 {
     top: calc(100% + 40px);
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.img-medal-style {
 	width: 100%;
 	max-width: 237px;
 	border: 6px solid #ffffff;
@@ -930,50 +967,38 @@ h6 {
 	margin-bottom: 44px;
 }
 
-.footer-form {
+.subscribe {
 	display: flex;
 	align-items: center;
 	height: 52px;
 	width: 100%;
 	max-width: 514px;
-	background-color: #323334;
-	border-radius: 30px;
 	margin-bottom: 20px;
 
 	input[type="text"] {
 		padding-left: 34px;
     	padding-right: 20px;
+		background-color: rgb(50, 51, 52);
 		font-size: 13px;
+		border-radius: 30px;
 		width: 100%;
 		max-width: 415px;
-		background: transparent;
 		color: #5e5e5e;
 	}
 
 	input[type="submit"] {
 		border-radius: 30px;
 		padding: 15px 37px;
-		text-transform: uppercase;
-		background-color: #16d428;
-		transition: all .3s linear;
-
-		&:hover {
-			background-color: #03b6e7;
-		}
-	}
-
-	input[type="text"],
-	input[type="submit"] {
-		height: 52px;
-		border: none;
+		margin-left: -30px;
 	}
 }
+
 
 .block-title-footer {
 	margin-bottom: 21px;
 }
 
-.footer-vertical-menu {
+.vertical-menu {
 	
 	li {
 		font-size: 13px;
@@ -1005,6 +1030,7 @@ h6 {
 	@include bg-img();
 	display: flex;
     align-items: center;
+	margin-bottom: 96px;
 }
 
 .page-main-title {
@@ -1019,7 +1045,7 @@ h6 {
 	background-color: #ffac55;
 }
 
-.page-about-block {
+.page-block-about {
 	display: flex;
 	align-items: center;
 }
@@ -1027,6 +1053,14 @@ h6 {
 .page-about-main-title {
 	position: relative;
     margin-left: -36px;
+}
+
+// ------------------------------------------
+// WHAT WE DO
+// ------------------------------------------
+
+.page-block-what {
+	margin-bottom: 29px;
 }
 
 @media(max-width: 1024px) {
