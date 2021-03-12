@@ -1167,6 +1167,12 @@ input[type="submit"] {
 
 .management {
 	padding-top: 95px;
+	padding-bottom: 95px;
+
+
+	.row {
+		margin-bottom: 55px;
+	}
 }
 
 .page-block-management {
@@ -1196,7 +1202,7 @@ input[type="submit"] {
 
 .social {
 	padding-top: 10px;
-	border-top: 1px solid #F9FBFB;
+	border-top: 1px solid #ccd3d3;
 
 	.social-link {
 		text-transform: uppercase;
@@ -1210,6 +1216,8 @@ input[type="submit"] {
 
 .link-twitter {
 	color: #51ABF1;
+	margin-left: 5px;
+    margin-right: 5px;
 }
 
 .link-google {
@@ -1347,6 +1355,42 @@ input[type="submit"] {
 	.page-about-img {
 		margin-top: 0;
 	}
+
+	.page-about-steps {
+		padding-bottom: 60px;
+		margin-top: -105px;
+		margin-bottom: 60px;
+	}
+
+	.mission {
+		padding-bottom: 60px;
+
+		.row {
+			margin-bottom: 30px;
+
+			.col-lg-6 {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.management {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		.row {
+			margin-bottom: 25px;
+		}
+	}
+
+	.meneger-info-box {
+		margin-bottom: 30px;
+	}
+
+	.about-meneger {
+		margin-bottom: 15px;
+	}
+
 }
 
 @media(max-width: 770px) {
@@ -1355,6 +1399,22 @@ input[type="submit"] {
 
 	.header-top {
 		display: none;
+	}
+
+	.page-about-intro {
+		margin-bottom: 60px;
+	}
+
+	.steps {
+		padding-top: 65px;
+	}
+
+	.page-about-img {
+		display: none;
+	}
+
+	.page-about-steps {
+		margin-top: 0px;
 	}
 }
 
