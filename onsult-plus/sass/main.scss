@@ -130,10 +130,6 @@ input[type="text"] {
 	width: 100%;
 	max-width: 415px;
 	color: #5e5e5e;
-
-	&:focus {
-		border-color: #f6a149;
-	}
 }
 
 input[type="submit"] {
@@ -717,8 +713,6 @@ input[type="submit"] {
 
 		a {
 			&::after {
-				transition: all .3s ease-in-out;
-				background-color: #ffac56;
 				z-index: 1;	
 			}
 			
@@ -744,13 +738,14 @@ input[type="submit"] {
 	right: 0;
 	opacity: 0;
 	visibility: hidden;
-	transition: all .2s ease;
 	display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 	padding: 15px;
 	cursor: pointer;
+	background-color: #ffac56;
+	transition: all .3s linear;
 	z-index: 1;
 }
 
@@ -772,6 +767,7 @@ input[type="submit"] {
 		font-weight: 700;
 		color: #fff;
 		z-index: 3;
+		
 	}
 
 	&::after {
@@ -782,7 +778,7 @@ input[type="submit"] {
 		border: 28px solid transparent;
     	border-bottom: 28px solid #03B6E7;;
     	border-left: 28px solid #03B6E7;
-    	transition: border-color 0.3s ease;
+		transition: all .3s linear;
 		z-index: 2;
 	}
 }
@@ -1025,7 +1021,7 @@ input[type="submit"] {
 	align-items: center;
 	height: 52px;
 	width: 100%;
-	max-width: 514px;
+	max-width: 600px;
 	margin-bottom: 20px;
 
 	input[type="text"] {
@@ -1042,7 +1038,7 @@ input[type="submit"] {
 	input[type="submit"] {
 		border-radius: 30px;
 		padding: 15px 37px;
-		margin-left: -30px;
+		margin-left: -55px;
 	}
 }
 
@@ -1057,7 +1053,7 @@ input[type="submit"] {
 		font-size: 13px;
 
 		a {
-			display: inline-block;
+			display:block;
 			padding-top: 6px;
 			padding-bottom: 6px;
 			text-transform: uppercase;
@@ -1274,15 +1270,9 @@ input[type="submit"] {
 	margin-bottom: 92px;
 
 	.row {
-		margin-bottom: 70px;
 
 		.col-lg-6 {
 			margin-bottom: 72px;
-
-			&:nth-child(7),
-			&:last-child {
-				margin-bottom: 0;
-			}
 		}
 	}
 }
