@@ -610,19 +610,56 @@ input[type="submit"] {
 	margin-bottom: 19px;
 }
 
-.steps-info {
-	margin-bottom: 20px;
+.steps-logo {
+	flex-shrink: 0;
+
+	&.box-circle {
+		display: inline-flex;
+    	border: 1px solid #ECF1F2;
+    	padding: 40px;
+    	border-radius: 50%;
+		margin-bottom: 0;
+		transition: .2s all linear;
+
+	}
 }
 
-// .steps-logo {
-// 	margin-bottom: 19px;
-// }
+.steps-info {
+	margin-bottom: 20px;
+	cursor: pointer;
+
+	&.info-box-horizont {
+		display: flex;
+		margin-bottom: 90px;
+
+		
+	}
+
+	&.active,
+	&:hover {
+		.box-circle {
+			box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+		}
+	}
+}
+
+.info-box-text {
+	margin-left: 55px;
+}
+
+.indus-block-title {
+	margin-bottom: 40px;
+}
 
 .steps-col-title {
 	margin-bottom: 25px;
 
 	a {
 		color: inherit;
+	}
+
+	&.box-title {
+		margin-bottom: 10px;
 	}
 }
 
@@ -672,7 +709,7 @@ input[type="submit"] {
 
 	&.active, 
 	&:hover {
-
+		
 		.img-inner-title {
 			opacity: 1;
 			visibility: visible;
@@ -682,7 +719,7 @@ input[type="submit"] {
 			&::after {
 				transition: all .3s ease-in-out;
 				background-color: #ffac56;
-				z-index: 1;
+				z-index: 1;	
 			}
 			
 		}
@@ -720,6 +757,7 @@ input[type="submit"] {
 .img-inner-main-title,
 .client-first-name {
 	text-transform: uppercase;
+	
 }
 
 .triangle {

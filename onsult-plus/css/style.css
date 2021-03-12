@@ -2197,8 +2197,36 @@ input[type=submit]:hover {
   margin-bottom: 19px;
 }
 
+.steps-logo {
+  flex-shrink: 0;
+}
+.steps-logo.box-circle {
+  display: inline-flex;
+  border: 1px solid #ECF1F2;
+  padding: 40px;
+  border-radius: 50%;
+  margin-bottom: 0;
+  transition: 0.2s all linear;
+}
+
 .steps-info {
   margin-bottom: 20px;
+  cursor: pointer;
+}
+.steps-info.info-box-horizont {
+  display: flex;
+  margin-bottom: 90px;
+}
+.steps-info.active .box-circle, .steps-info:hover .box-circle {
+  box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+}
+
+.info-box-text {
+  margin-left: 55px;
+}
+
+.indus-block-title {
+  margin-bottom: 40px;
 }
 
 .steps-col-title {
@@ -2206,6 +2234,9 @@ input[type=submit]:hover {
 }
 .steps-col-title a {
   color: inherit;
+}
+.steps-col-title.box-title {
+  margin-bottom: 10px;
 }
 
 .col-num {
