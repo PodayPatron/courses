@@ -2192,8 +2192,7 @@ input[type=submit]:hover {
   margin-bottom: 75px;
 }
 
-.steps-block-title,
-.steps-logo {
+.steps-block-title {
   margin-bottom: 19px;
 }
 
@@ -2205,22 +2204,20 @@ input[type=submit]:hover {
   border: 1px solid #ECF1F2;
   padding: 40px;
   border-radius: 50%;
-  margin-bottom: 0;
   transition: 0.2s all linear;
 }
 
 .steps-info {
   margin-bottom: 20px;
-  cursor: pointer;
-}
-.steps-info.info-box-horizont {
-  display: flex;
-  margin-bottom: 90px;
-}
-.steps-info.active .box-circle, .steps-info:hover .box-circle {
-  box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
 }
 
+.info-box-horizont {
+  display: flex;
+  cursor: pointer;
+}
+.info-box-horizont.active .box-circle, .info-box-horizont:hover .box-circle {
+  box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+}
 .info-box-text {
   margin-left: 55px;
 }
@@ -2240,6 +2237,7 @@ input[type=submit]:hover {
 }
 
 .col-num {
+  margin-top: 19px;
   color: #16d428;
   margin-bottom: 0;
 }
@@ -2738,9 +2736,35 @@ input[type=submit]:hover {
   margin-bottom: 50px;
 }
 
+.industries {
+  margin-bottom: 92px;
+}
+.industries .row {
+  margin-bottom: 70px;
+}
+.industries .row .col-lg-6 {
+  margin-bottom: 72px;
+}
+.industries .row .col-lg-6:nth-child(7), .industries .row .col-lg-6:last-child {
+  margin-bottom: 0;
+}
+
+.page-proj {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin-bottom: 0;
+}
+.page-proj .row {
+  margin-bottom: 45px;
+}
+
 @media (max-width: 1024px) {
   .projects {
     margin-bottom: 25px;
+  }
+
+  .page-proj {
+    margin-bottom: 0;
   }
 
   .main-nav {
@@ -2757,6 +2781,10 @@ input[type=submit]:hover {
 
   .contact {
     margin-bottom: 10px;
+  }
+
+  .industries {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 991px) {
@@ -2784,13 +2812,16 @@ input[type=submit]:hover {
     margin-bottom: 30px;
   }
 
-  .reviews {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
   .reviews .row {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .reviews,
+.left-info-block,
+.page-proj {
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .clients {
@@ -2818,11 +2849,6 @@ input[type=submit]:hover {
     margin-bottom: 50px;
   }
 
-  .left-info-block {
-    padding-top: 55px;
-    padding-bottom: 50px;
-  }
-
   .col-inner-block {
     flex-direction: column;
     align-items: flex-start;
@@ -2833,9 +2859,7 @@ input[type=submit]:hover {
   }
 
   .page-about-steps {
-    padding-bottom: 60px;
     margin-top: -105px;
-    margin-bottom: 60px;
   }
 
   .mission {
@@ -2848,12 +2872,14 @@ input[type=submit]:hover {
     margin-bottom: 30px;
   }
 
-  .management {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .management .row {
     margin-bottom: 25px;
+  }
+
+  .management,
+.page-about-steps {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .meneger-info-box {
@@ -2862,6 +2888,17 @@ input[type=submit]:hover {
 
   .about-meneger {
     margin-bottom: 15px;
+  }
+
+  .industries .row {
+    margin-bottom: 25px;
+  }
+  .industries .row .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  .info-box-text {
+    margin-left: 25px;
   }
 }
 @media (max-width: 770px) {
@@ -2883,6 +2920,19 @@ input[type=submit]:hover {
 
   .page-about-steps {
     margin-top: 0px;
+  }
+
+  .info-box-horizont {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-box-text {
+    margin-left: 0px;
+  }
+
+  .box-circle {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 520px) {
