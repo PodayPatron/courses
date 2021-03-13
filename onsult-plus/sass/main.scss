@@ -118,17 +118,23 @@ h6 {
 input[type="text"],
 input[type="submit"] {
 	height: 52px;
-	border: 0;
-	border-bottom: 3px solid rgb(50, 51, 52);
 	transition: border 0.3s ease-in-out;
 }
 
+input[type="text"],
+input[type="submit"],
+textarea {
+	border: 0;
+	border-bottom: 2px solid rgb(174, 178, 184);
+
+}
+
+
 
 input[type="text"] {
-	background-color: rgb(50, 51, 52);
+	background-color: #fff;
 	font-size: 13px;
 	width: 100%;
-	max-width: 415px;
 	color: #5e5e5e;
 }
 
@@ -665,6 +671,10 @@ input[type="submit"] {
 
 	.row {
 		margin-bottom: 23px;
+
+		.col-lg-6 {
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -1358,6 +1368,26 @@ input[type="submit"] {
 
 .proj-page-text {
 	margin-bottom: 40px;
+}
+
+// ------------------------------------------
+// CONTACT
+// ------------------------------------------
+
+textarea {
+	width: 100%;
+	min-height: 192px;
+}
+
+.connect {
+
+	.row {	
+		margin-bottom: 40px;
+
+		.col-lg-6 {
+			margin-bottom: 45px;
+		}
+	}
 }
 
 
