@@ -276,7 +276,8 @@ input[type="submit"] {
 .steps-col-title,
 .blog-item-title,
 .contact-title,
-.meneger-position {
+.meneger-position,
+.option-name {
 	text-transform: uppercase;
 }
 
@@ -1301,6 +1302,11 @@ input[type="submit"] {
 	}
 }
 
+.panel-title-option {
+	display: flex;
+    justify-content: space-between;
+}
+
 .services-block-title {
 	margin-bottom: 45px;
 }
@@ -1311,6 +1317,25 @@ input[type="submit"] {
 
 .serv-col-title {
 	margin-bottom: 8px;
+}
+
+.block-option {
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+}
+
+.option-name {
+	color: black;
+	font-size: 13px;
+	margin-right: 11px;
+}
+
+.panel-select {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	min-width: 262px;
+	color: gray;
 }
 
 // ------------------------------------------
@@ -1587,6 +1612,10 @@ input[type="submit"] {
 
 	.box-circle {
 		margin-bottom: 20px;
+	}
+
+	.block-option {
+		display: none;
 	}
 }
 
