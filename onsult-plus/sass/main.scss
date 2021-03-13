@@ -682,6 +682,10 @@ input[type="submit"] {
 	font-size: 12px;
 	color: #fff;
 	border: 2px solid #ffac56;
+
+	&.top-box-bg {
+		background-color: #ffac56;
+	}
 }
 
 .proj-img {
@@ -1309,6 +1313,27 @@ input[type="submit"] {
 	margin-bottom: 8px;
 }
 
+// ------------------------------------------
+// PAGE PAGES-PROJECT
+// ------------------------------------------
+
+.pages-projects {
+
+	.row {
+
+		.col-lg-4 {
+			margin-bottom: 98px;
+		}
+	}
+}
+
+.pages-proj-img {
+	margin-bottom: 35px;
+}
+
+.proj-page-text {
+	margin-bottom: 40px;
+}
 
 
 @media(max-width: 1024px) {
@@ -1339,8 +1364,23 @@ input[type="submit"] {
 		margin-bottom: 10px;
 	}
 
-	.industries {
+	.industries,
+	.page-services {
 		margin-bottom: 60px;
+	}
+
+	.box-logo {
+		margin-bottom: 15px;
+	}
+
+	.pages-projects {
+
+		.row {
+
+			.col-lg-4 {
+				margin-bottom: 65px;
+			}
+		}
 	}
 }
 

@@ -2259,6 +2259,9 @@ input[type=submit]:hover {
   color: #fff;
   border: 2px solid #ffac56;
 }
+.top-info-box.top-box-bg {
+  background-color: #ffac56;
+}
 
 .proj-img a::after {
   content: "";
@@ -2764,6 +2767,18 @@ input[type=submit]:hover {
   margin-bottom: 8px;
 }
 
+.pages-projects .row .col-lg-4 {
+  margin-bottom: 98px;
+}
+
+.pages-proj-img {
+  margin-bottom: 35px;
+}
+
+.proj-page-text {
+  margin-bottom: 40px;
+}
+
 @media (max-width: 1024px) {
   .projects {
     margin-bottom: 25px;
@@ -2789,8 +2804,17 @@ input[type=submit]:hover {
     margin-bottom: 10px;
   }
 
-  .industries {
+  .industries,
+.page-services {
     margin-bottom: 60px;
+  }
+
+  .box-logo {
+    margin-bottom: 15px;
+  }
+
+  .pages-projects .row .col-lg-4 {
+    margin-bottom: 65px;
   }
 }
 @media (max-width: 991px) {
