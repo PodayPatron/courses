@@ -614,12 +614,7 @@ input[type="submit"] {
     	padding: 40px;
     	border-radius: 50%;
 		transition: .2s all linear;
-
 	}
-}
-
-.steps-info {
-	margin-bottom: 20px;
 }
 
 .info-box-horizont {
@@ -632,10 +627,6 @@ input[type="submit"] {
 			box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
 		}
 	}	
-
-	&:last-child {
-		
-	}
 }
 
 .info-box-text {
@@ -1291,6 +1282,35 @@ input[type="submit"] {
 	}
 }
 
+// ------------------------------------------
+// PAGE SERVICES
+// ------------------------------------------
+
+.page-services {
+	margin-bottom: 95px;
+
+	.row {
+
+		.col-lg-4 {
+			margin-bottom: 66px;
+		}
+	}
+}
+
+.services-block-title {
+	margin-bottom: 45px;
+}
+
+.box-logo {
+	margin-bottom: 25px;
+}
+
+.serv-col-title {
+	margin-bottom: 8px;
+}
+
+
+
 @media(max-width: 1024px) {
 
 	// HEADER
@@ -1481,6 +1501,15 @@ input[type="submit"] {
 		margin-left: 25px;
 	}
 
+	.box-spacing {
+
+		.row {
+
+			.col-lg-4 {
+				margin-bottom: 35px;
+			}
+		}
+	}
 }
 
 @media(max-width: 770px) {

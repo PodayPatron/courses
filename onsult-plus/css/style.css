@@ -2204,10 +2204,6 @@ input[type=submit]:hover {
   transition: 0.2s all linear;
 }
 
-.steps-info {
-  margin-bottom: 20px;
-}
-
 .info-box-horizont {
   display: flex;
   cursor: pointer;
@@ -2215,6 +2211,7 @@ input[type=submit]:hover {
 .info-box-horizont.active .box-circle, .info-box-horizont:hover .box-circle {
   box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
 }
+
 .info-box-text {
   margin-left: 55px;
 }
@@ -2748,6 +2745,25 @@ input[type=submit]:hover {
   margin-bottom: 45px;
 }
 
+.page-services {
+  margin-bottom: 95px;
+}
+.page-services .row .col-lg-4 {
+  margin-bottom: 66px;
+}
+
+.services-block-title {
+  margin-bottom: 45px;
+}
+
+.box-logo {
+  margin-bottom: 25px;
+}
+
+.serv-col-title {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 1024px) {
   .projects {
     margin-bottom: 25px;
@@ -2889,6 +2905,10 @@ input[type=submit]:hover {
 
   .info-box-text {
     margin-left: 25px;
+  }
+
+  .box-spacing .row .col-lg-4 {
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 770px) {
