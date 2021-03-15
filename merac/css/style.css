@@ -1737,6 +1737,7 @@ a {
 p {
   margin-bottom: 20px;
   color: rgba(16, 16, 16, 0.5);
+  line-height: 1.6;
 }
 p:last-child {
   margin-bottom: 0;
@@ -2042,4 +2043,57 @@ button {
 
 .slider-product {
   position: relative;
+}
+.slider-product img {
+  height: 481px;
+}
+
+.img-inner-block {
+  position: absolute;
+  top: 93px;
+  left: 40px;
+}
+
+.img-inner-title {
+  max-width: 480px;
+  margin-bottom: 16px;
+}
+
+.img-inner-suptitle {
+  max-width: 360px;
+  margin-bottom: 24px;
+}
+
+.btn-block {
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  margin-left: 21px;
+}
+
+.check-style {
+  width: 30px;
+  height: 30px;
+  background-color: #A4B4A7;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.check-style.another-style {
+  background-color: #D7575E;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #DA8A67;
+  color: #FFF;
+  padding: 11px 31px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.btn.color-scheme-white-btn {
+  color: rgba(16, 16, 16, 0.8);
+  background-color: #fff;
 }
