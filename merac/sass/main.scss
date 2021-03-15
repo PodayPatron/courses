@@ -438,17 +438,15 @@ button {
 // INTRO
 // ------------------------------------------------------------------------------------------------
 
+.intro {
+	margin-bottom: 90px;
+}
+
 .slider-product {
 	position: relative;
 	
 	img {
-		height: 481px;
-	}
-
-	a {
-		&::after {
-			@include link();
-		}
+		height: 480px;
 	}
 }
 
@@ -502,5 +500,54 @@ button {
 	&.color-scheme-white-btn {
 		color:rgba(16, 16, 16, 0.8);
 		background-color: #fff;
+
+		&:hover {
+			background-color:#DA8A67;
+		}
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// PRODUCTS
+// ------------------------------------------------------------------------------------------------
+
+.main-subtitle {
+	margin-bottom: 7px;
+	color:  #da8a67;
+}
+
+.main-title {
+
+}
+
+.main-panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tabs-menu {
+	display: flex;
+
+	li {
+		margin-right: 23px;
+
+		a {
+			padding: 2px 4px;
+			color:rgba(16, 16, 16, 0.7);
+		}
+
+		&.active,
+		&:hover {
+
+			a {
+				color:rgba(16, 16, 16,);
+				border-bottom: 2px solid red;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }

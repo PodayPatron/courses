@@ -2041,19 +2041,15 @@ button {
   margin-right: 0;
 }
 
+.intro {
+  margin-bottom: 90px;
+}
+
 .slider-product {
   position: relative;
 }
 .slider-product img {
-  height: 481px;
-}
-.slider-product a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 480px;
 }
 
 .img-inner-block {
@@ -2105,4 +2101,36 @@ button {
 .btn.color-scheme-white-btn {
   color: rgba(16, 16, 16, 0.8);
   background-color: #fff;
+}
+.btn.color-scheme-white-btn:hover {
+  background-color: #DA8A67;
+}
+
+.main-subtitle {
+  margin-bottom: 7px;
+  color: #da8a67;
+}
+
+.main-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs-menu {
+  display: flex;
+}
+.tabs-menu li {
+  margin-right: 23px;
+}
+.tabs-menu li a {
+  padding: 2px 4px;
+  color: rgba(16, 16, 16, 0.7);
+}
+.tabs-menu li.active a, .tabs-menu li:hover a {
+  color: #101010;
+  border-bottom: 2px solid red;
+}
+.tabs-menu li:last-child {
+  margin-right: 0;
 }
