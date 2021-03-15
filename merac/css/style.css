@@ -1957,14 +1957,21 @@ button {
   visibility: visible;
 }
 
+.fa-chevron-down,
+.fa-chevron-right {
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
 .inner-link {
   display: flex;
   justify-content: space-between;
   padding: 18px;
 }
 .inner-link i {
-  font-size: 17px;
+  font-size: 13px;
   margin-right: 16px;
+  color: #fff;
 }
 
 .main-nav {
@@ -1980,10 +1987,6 @@ button {
   padding: 15px;
   color: inherit;
 }
-.main-nav li a i {
-  color: #B4B4B4;
-  font-size: 12px;
-}
 
 .dropdown {
   position: absolute;
@@ -1994,6 +1997,9 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: 0.2s all linear;
+}
+.dropdown li:hover a {
+  box-shadow: 0px -5px 5px -5px rgba(184, 194, 201, 0.6) inset;
 }
 .dropdown li::after {
   content: "";
@@ -2007,8 +2013,12 @@ button {
   max-width: 240px;
   margin: 0 auto;
 }
-.dropdown li:hover a {
-  box-shadow: 0px -5px 5px -5px rgba(184, 194, 201, 0.6) inset;
+
+.arrow-right i {
+  font-size: 12px;
+  padding-right: 28px;
+  padding-left: 28px;
+  color: #B4B4B4;
 }
 
 .header-col-right .main-nav {

@@ -332,14 +332,21 @@ button {
 	}
 }
 
+.fa-chevron-down,
+.fa-chevron-right {
+	color: #B4B4B4;
+	font-size: 12px
+}
+
 .inner-link {
 	display: flex;
 	justify-content: space-between;
 	padding: 18px;
 
 	i {
-		font-size: 17px;
+		font-size: 13px;
 		margin-right: 16px;
+		color: #fff;
 	}
 }
 
@@ -355,11 +362,6 @@ button {
 			display: inline-block;
 			padding: 15px;
 			color: inherit;
-
-			i {
-				color: #B4B4B4;
-				font-size: 12px;
-			}
 		}
 	}
 }
@@ -376,6 +378,12 @@ button {
 	
 	li {
 
+		&:hover {
+
+			a {
+				box-shadow: 0px -5px 5px -5px rgba(184, 194, 201, 0.6) inset;
+			}
+		}
 		
 		&::after {
 			content: '';
@@ -389,13 +397,16 @@ button {
 			max-width: 240px;
 			margin: 0 auto;
 		}
+	}
+}
 
-		&:hover {
-
-			a {
-				box-shadow: 0px -5px 5px -5px rgba(184, 194, 201, 0.6) inset;
-			}
-		}
+.arrow-right {
+	
+	i {
+		font-size: 12px;
+		padding-right: 28px;
+		padding-left: 28px;
+		color: #B4B4B4;
 	}
 }
 
@@ -420,4 +431,8 @@ button {
 		}
 	}
 }
+
+// ------------------------------------------------------------------------------------------------
+// INTRO
+// ------------------------------------------------------------------------------------------------
 
