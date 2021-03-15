@@ -444,12 +444,19 @@ button {
 	img {
 		height: 481px;
 	}
+
+	a {
+		&::after {
+			@include link();
+		}
+	}
 }
 
 .img-inner-block {
 	position: absolute;
 	top: 93px;
 	left: 40px;
+	z-index: 1;
 }
 
 .img-inner-title {

@@ -2047,11 +2047,20 @@ button {
 .slider-product img {
   height: 481px;
 }
+.slider-product a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .img-inner-block {
   position: absolute;
   top: 93px;
   left: 40px;
+  z-index: 1;
 }
 
 .img-inner-title {
