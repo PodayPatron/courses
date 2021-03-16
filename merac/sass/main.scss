@@ -724,8 +724,8 @@ small {
 
 .title-check {
 	display: flex;
-	padding-top: 18px;
-	margin-bottom: 10px;
+	padding-top: 20px;
+	margin-bottom: 15px;
 }
 
 .style-2 {
@@ -821,6 +821,7 @@ small {
 	.products {
 
 		.row {
+			margin-bottom: 20px;
 
 			> [class*=col-] {
 				margin-bottom: 35px;
