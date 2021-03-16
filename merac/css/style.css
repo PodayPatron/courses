@@ -2420,15 +2420,27 @@ small {
 }
 
 .user-photo {
+  position: relative;
   padding-right: 11px;
 }
 .user-photo img {
   border-radius: 50%;
 }
+.user-photo > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .user-name {
   padding-top: 8px;
   margin-bottom: 6px;
+}
+.user-name a {
+  color: inherit;
 }
 
 .user-position {

@@ -987,16 +987,28 @@ small {
 }
 
 .user-photo {
+	position: relative;
 	padding-right: 11px;
 
 	img {
 		border-radius: 50%;
+	}
+
+	> a {
+
+		&::after {
+			@include link();
+		}
 	}
 }
 
 .user-name {
 	padding-top: 8px;
 	margin-bottom: 6px;
+
+	a {
+		color: inherit;
+	}
 }
 
 .user-position {
