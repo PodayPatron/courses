@@ -364,6 +364,8 @@ small {
 	width: 100%;
 	max-width: 130px;
 	height: 35px;
+	padding-left: 0;
+    padding-right: 0;
 }
 
 .form-btn {
@@ -727,6 +729,7 @@ small {
 .style-name {
 	flex-grow: 1;
 	margin-bottom: 0;
+	padding-right: 5px;
 
 	a {
 		color:  #101010;
