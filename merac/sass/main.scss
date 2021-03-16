@@ -142,7 +142,7 @@ h6 {
 }
 
 .light-background {
-	background-color: rgb(218, 138, 103, 0.5);
+	background-color: rgb(218, 138, 103, 0.1);
 }
 
 .flex-align {
@@ -639,6 +639,14 @@ small {
 		}
 	}
 
+	&.btn-mini-long {
+		padding: 10px 20px;
+
+		&:hover {
+			background-color: #C8CECE;
+		}
+	}
+
 	&.btn-mini {
 		padding: 11px 14px;
 
@@ -737,7 +745,8 @@ small {
 }
 
 .img-wrapper,
-.img-inner-block-product {
+.img-inner-block-product,
+.category-wrap {
 	position: relative;
 }
 
@@ -791,6 +800,53 @@ small {
 			visibility: visible;
 		}
 	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// CATEGORY
+// ------------------------------------------------------------------------------------------------
+
+.category {
+	padding-top: 63px;
+	padding-bottom: 63px;
+}
+
+.categ-block-title {
+	margin-bottom: 32px;
+}
+
+.categ-block-title-inner {
+	margin-bottom: 25px;
+}
+
+.categ-img-inner-block {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-top: 26px;
+    padding-bottom: 40px;
+    padding-left: 22px;
+	background-color: #FBF3F0;
+}
+
+.main-p {
+	max-width: 380px;
+}
+
+.categ-main-subtitle {
+	margin-bottom: 10px;
+}
+
+.categ-main-subtitle-inner {
+	margin-bottom: 20px;
+}
+
+.categ-main-title {
+	margin-bottom: 20px;
+}
+
+.categ-main-inner-title {
+	max-width: 260px;
 }
 
 
