@@ -542,7 +542,10 @@ small {
 
 .info-box {
 	display: flex;
-	align-items: center; 
+
+	&.info-box-verical {
+		flex-direction: column;
+	}
 
 	&.header-info-box {
 		margin-right: 20px;
@@ -901,11 +904,13 @@ small {
 	margin-bottom: 60px;
 }
 
-.promo-block-title {
+.promo-block-title,
+.rev-block-title {
 	margin-bottom: 29px;
 }
 
-.promo-main-title {
+.promo-main-title,
+.rev-main-title {
 	margin-bottom: 8px;
 }
 
@@ -941,8 +946,12 @@ small {
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
-	color:  #da8a67;
 	margin-bottom: 8px;
+}
+
+.promo-inner-sub,
+.user-position {
+	color:  #da8a67;
 }
 
 .promo-inner-title {
@@ -954,6 +963,45 @@ small {
 	padding: 130px 20px;
 }
 
+// ------------------------------------------------------------------------------------------------
+// REVIEWS
+// ------------------------------------------------------------------------------------------------
+
+.reviews {
+	padding-top: 62px;
+	padding-bottom: 82px;
+}
+
+.rev-info-box {
+	padding-top: 40px;
+	padding-bottom: 40px;
+    padding-left: 17px;
+    padding-right: 17px;
+	background-color: #fff;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 21px;
+}
+
+.user-photo {
+	padding-right: 11px;
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+.user-name {
+	padding-top: 8px;
+	margin-bottom: 6px;
+}
+
+.user-position {
+	font-size: 13px;
+}
 
 // ------------------------------------------------------------------------------------------------
 // MEDIA
