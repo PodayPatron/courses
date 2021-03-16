@@ -2230,10 +2230,12 @@ small {
   display: flex;
   opacity: 0;
   visibility: hidden;
+  z-index: 2;
 }
 .inner-panel .btn,
 .inner-panel button {
   margin-right: 10px;
+  z-index: 2;
 }
 .inner-panel .btn:last-child,
 .inner-panel button:last-child {
@@ -2252,6 +2254,16 @@ small {
 .product-wrapper:hover .inner-panel {
   opacity: 1;
   visibility: visible;
+}
+
+.img-wrapper > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .category {
@@ -2274,7 +2286,19 @@ small {
   padding-top: 26px;
   padding-bottom: 40px;
   padding-left: 22px;
+  padding-right: 10px;
   background-color: #FBF3F0;
+  z-index: 2;
+}
+
+.category-wrap > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .main-p {

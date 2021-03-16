@@ -769,10 +769,12 @@ small {
 	display: flex;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 2;
 
 	.btn,
 	button {
 		margin-right: 10px;
+		z-index: 2;
 
 		&:last-child {
 			margin-right: 0;
@@ -802,6 +804,17 @@ small {
 	}
 }
 
+.img-wrapper {
+
+	> a {
+
+		&::after {
+			@include link();
+			z-index: 1;
+		}
+	}
+}
+
 // ------------------------------------------------------------------------------------------------
 // CATEGORY
 // ------------------------------------------------------------------------------------------------
@@ -826,7 +839,20 @@ small {
 	padding-top: 26px;
     padding-bottom: 40px;
     padding-left: 22px;
+	padding-right: 10px;
 	background-color: #FBF3F0;
+	z-index: 2;
+}
+
+.category-wrap {
+
+	> a {
+
+		&::after {
+			@include link();
+			z-index: 1;
+		}
+	}
 }
 
 .main-p {
