@@ -158,6 +158,78 @@ h6 {
 	background-color: #da8a67;
 }
 
+.flex-shrink {
+	flex-shrink: 0;
+}
+
+//**** BASE INPUT ****//
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+select {
+	height: 40px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	width: 100%;
+	outline: none;
+	border: 2px solid rgba(16, 16, 16, 0.05);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+	border: 2px solid rgba(16, 16, 16, 0.05);
+	border-radius: 0;
+	padding: 10px 20px;
+	outline: 0;
+	text-decoration: none;
+
+	&:hover {
+		background-color: chocolate;
+	}
+}
+
+ol,
+ul {
+	list-style: disc;
+	padding-left: 20px;
+	
+	li {
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+a {
+	color: orange;
+}
+
+strong {
+	font-weight: 700;
+}
+
+small {
+	font-size: 80%;
+}
+
 // ------------------------------------------------------------------------------------------------
 // HEADER
 // ------------------------------------------------------------------------------------------------
@@ -209,22 +281,6 @@ h6 {
 // HEADER MAIN
 // ------------------------------------------
 
-input[type="text"] {
-	width: 100%;
-	max-width: 580px;
-}
-
-input[type="text"],
-button {
-	height: 40px;
-	outline: none;
-	border: 1px solid #F4F4F4;
-}
-
-.main-logo {
-	flex-shrink: 0;
-}
-
 .header-main {
 
 	.header-row-inner {
@@ -238,6 +294,7 @@ button {
 	max-width: 580px;
 
 	input[type="text"] {
+		max-width: 580px;
 		padding-left: 40px;
 		padding-right: 170px;
 		
@@ -258,6 +315,7 @@ button {
 }
 
 .form-btn {
+	height: 40px;
 	position: relative;
 	margin-right: -40px;
 	background-color: #fff;
@@ -489,6 +547,10 @@ button {
 	}
 }
 
+// ------------------------------------------
+// BUTTON BTN
+// ------------------------------------------
+
 .btn {
 	display: inline-block;
 	background-color:#DA8A67;
@@ -516,9 +578,6 @@ button {
 	color:  #da8a67;
 }
 
-.main-title {
-
-}
 
 .main-panel {
 	display: flex;
