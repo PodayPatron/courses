@@ -2676,6 +2676,10 @@ small {
   background-color: lightseagreen;
 }
 
+.footer-general {
+  padding-bottom: 40px;
+}
+
 .footer-logo {
   margin-bottom: 30px;
 }
@@ -2809,6 +2813,10 @@ small {
 
   .pre-foot-form input[type=text] {
     margin-left: 0;
+  }
+
+  .footer-general .row > [class*=col-] {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 770px) {
