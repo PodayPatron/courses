@@ -1861,9 +1861,15 @@ small {
   margin-right: 5px;
 }
 
+.fa-chevron-down,
+.fa-chevron-right {
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
 .arrow-down {
   margin-left: 5px;
-  color: #d8c9c9;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .header-main .header-row-inner {
@@ -1964,12 +1970,6 @@ small {
   visibility: visible;
 }
 
-.fa-chevron-down,
-.fa-chevron-right {
-  color: #B4B4B4;
-  font-size: 12px;
-}
-
 .inner-link {
   display: flex;
   justify-content: space-between;
@@ -2066,8 +2066,13 @@ small {
 
 .img-inner-block {
   position: absolute;
-  top: 93px;
-  left: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  display: flex;
+  align-items: center;
   z-index: 1;
 }
 
@@ -2125,6 +2130,7 @@ small {
 }
 .btn.color-scheme-white-btn:hover {
   background-color: #DA8A67;
+  color: #fff;
 }
 .btn.btn-mini-long {
   padding: 10px 20px;
@@ -2155,6 +2161,7 @@ small {
 }
 
 .main-subtitle {
+  font-size: 13px;
   margin-bottom: 7px;
   color: #da8a67;
 }
@@ -2285,7 +2292,7 @@ small {
 .category {
   padding-top: 63px;
   padding-bottom: 63px;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 
 .categ-block-title {
@@ -2403,6 +2410,7 @@ small {
 .reviews {
   padding-top: 62px;
   padding-bottom: 82px;
+  margin-bottom: 85px;
 }
 
 .rev-info-box {
@@ -2443,8 +2451,71 @@ small {
   color: inherit;
 }
 
-.user-position {
+.user-position,
+.date {
   font-size: 13px;
+}
+
+.artic-category {
+  position: relative;
+  max-width: 100px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: red;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.date {
+  margin-bottom: 30px;
+}
+
+.blog-title {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.continue,
+.blog-title {
+  font-weight: 600;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.continue a {
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(16, 16, 16, 0.8);
+}
+.continue a i {
+  font-weight: 500;
+}
+.continue a:hover {
+  color: rgba(212, 26, 26, 0.8);
+}
+
+.author {
+  border-radius: 50%;
+  width: 20px;
+}
+
+.date-text {
+  color: rgba(16, 16, 16, 0.5);
+}
+
+.continue-arrow {
+  padding-left: 10px;
+}
+
+.artic-text,
+.artic-category {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (max-width: 1025px) {
@@ -2505,9 +2576,23 @@ small {
 
   .flex-block {
     flex-direction: column;
+    margin-bottom: 40px;
   }
   .flex-block > .col-flex {
     margin-bottom: 25px;
+  }
+
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 55px;
+  }
+  .reviews .row > [class*=col-] {
+    margin-bottom: 25px;
+  }
+
+  .blog .row > [class*=col-] {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 770px) {
