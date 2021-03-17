@@ -2513,7 +2513,8 @@ small {
 }
 
 .continue,
-.blog-title {
+.blog-title,
+.phone {
   font-weight: 600;
 }
 
@@ -2673,6 +2674,48 @@ small {
 }
 .pre-foot-form input[type=submit]:hover {
   background-color: lightseagreen;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.foot-col-about {
+  margin-bottom: 36px;
+}
+
+.vertical-menu-foot li {
+  list-style: none;
+  margin-bottom: 0;
+}
+.vertical-menu-foot li a {
+  display: block;
+  padding: 11px;
+  font-size: 13px;
+  color: rgba(16, 16, 16, 0.7);
+}
+.vertical-menu-foot li:hover a {
+  color: #333333;
+}
+
+.phone,
+.payments {
+  cursor: pointer;
+}
+
+.adress {
+  max-width: 180px;
+  margin-bottom: 28px;
+}
+
+.socials i {
+  color: rgba(16, 16, 16, 0.5);
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.socials i:hover {
+  color: blue;
 }
 
 @media (max-width: 1025px) {
