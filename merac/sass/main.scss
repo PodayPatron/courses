@@ -638,6 +638,7 @@ small {
 	padding: 11px 31px;
 	font-weight: 600;
 	font-size: 14px;
+	font-weight: 600;
 	white-space: nowrap;
 
 	&.color-scheme-white-btn {
@@ -656,6 +657,10 @@ small {
 		&:hover {
 			background-color: #C8CECE;
 		}
+	}
+
+	&.btn-mini-long-xl {
+		padding: 10px 34px;
 	}
 
 	&.btn-mini {
@@ -769,7 +774,8 @@ small {
 .img-wrapper,
 .img-inner-block-product,
 .category-wrap,
-.promo-inner {
+.promo-inner,
+.subscribe-inner-img {
 	position: relative;
 }
 
@@ -1028,6 +1034,11 @@ small {
 // BLOG
 // ------------------------------------------------------------------------------------------------
 
+.blog {
+	padding-bottom: 40px;
+	margin-bottom: 80px;	
+}
+
 .artic-category {
 	position: relative;
 	max-width: 100px;
@@ -1093,6 +1104,100 @@ small {
 .artic-category {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+// ------------------------------------------------------------------------------------------------
+// SUBSCRIBE
+// ------------------------------------------------------------------------------------------------
+
+.subscribe {
+	margin-bottom: 80px;
+
+	.row {
+		align-items: flex-end;
+	}
+}
+
+.instag-about-us{
+	max-width: 280px;
+    margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.instag-link {
+
+	a {
+		color: inherit;
+	}
+
+	&:last-child {
+		margin-bottom: 20px;
+	}
+}
+
+.instag-logo {
+	
+	i {
+		color: #da8a67;
+		font-size: 25px;
+	}
+}
+
+.sub-btn {
+	border: 2px solid rgb(243, 243, 243);
+}
+
+.subscribe-inner-img {
+
+	> a {
+
+		&::after {
+			@include link();
+			transition: all .2s linear;
+			z-index: 1;
+		}
+	}
+
+	&:hover {
+		
+		a {
+			
+			&::after {
+				box-shadow: 0px -100px 50px 15px rgba(34, 60, 80, 0.2) inset;
+			}
+		}
+
+		.inner-panel-subscribe {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.inner-panel-subscribe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+	display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2s linear;
+}
+
+.likes,
+.coments {
+	color: rgb(255, 255, 255, 0.8);
+	z-index: 2;
+	cursor: pointer;
+	transition: all .2s linear;
+
+	&:hover {
+		color: rgb(201, 68, 235);
+	}
 }
 
 // ------------------------------------------------------------------------------------------------

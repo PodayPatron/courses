@@ -2122,6 +2122,7 @@ small {
   padding: 11px 31px;
   font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   white-space: nowrap;
 }
 .btn.color-scheme-white-btn {
@@ -2137,6 +2138,9 @@ small {
 }
 .btn.btn-mini-long:hover {
   background-color: #C8CECE;
+}
+.btn.btn-mini-long-xl {
+  padding: 10px 34px;
 }
 .btn.btn-mini {
   padding: 11px 14px;
@@ -2227,7 +2231,8 @@ small {
 .img-wrapper,
 .img-inner-block-product,
 .category-wrap,
-.promo-inner {
+.promo-inner,
+.subscribe-inner-img {
   position: relative;
 }
 
@@ -2456,6 +2461,11 @@ small {
   font-size: 13px;
 }
 
+.blog {
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+
 .artic-category {
   position: relative;
   max-width: 100px;
@@ -2516,6 +2526,79 @@ small {
 .artic-category {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.subscribe {
+  margin-bottom: 80px;
+}
+.subscribe .row {
+  align-items: flex-end;
+}
+
+.instag-about-us {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.instag-link a {
+  color: inherit;
+}
+.instag-link:last-child {
+  margin-bottom: 20px;
+}
+
+.instag-logo i {
+  color: #da8a67;
+  font-size: 25px;
+}
+
+.sub-btn {
+  border: 2px solid #f3f3f3;
+}
+
+.subscribe-inner-img > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+.subscribe-inner-img:hover a::after {
+  box-shadow: 0px -100px 50px 15px rgba(34, 60, 80, 0.2) inset;
+}
+.subscribe-inner-img:hover .inner-panel-subscribe {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inner-panel-subscribe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.likes,
+.coments {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.likes:hover,
+.coments:hover {
+  color: #c944eb;
 }
 
 @media (max-width: 1025px) {
