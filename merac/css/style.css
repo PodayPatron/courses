@@ -1748,6 +1748,7 @@ input[type=email],
 input[type=date],
 input[type=time],
 input[type=url],
+input[type=submit],
 select {
   height: 40px;
 }
@@ -2529,7 +2530,7 @@ small {
 }
 
 .subscribe {
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 .subscribe .row {
   align-items: flex-end;
@@ -2599,6 +2600,36 @@ small {
 .likes:hover,
 .coments:hover {
   color: #c944eb;
+}
+
+.pre-footer {
+  margin-bottom: 40px;
+}
+.pre-footer .container {
+  padding-top: 46px;
+  padding-bottom: 46px;
+  border-top: 1px solid rgba(16, 16, 16, 0.05);
+  border-bottom: 1px solid rgba(16, 16, 16, 0.05);
+}
+
+.pre-foot-block {
+  display: flex;
+}
+
+.pre-foot-main-title {
+  margin-bottom: 15px;
+}
+
+.messeage-icon {
+  margin-right: 15px;
+}
+.messeage-icon i {
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+.pre-foot-form {
+  display: flex;
 }
 
 @media (max-width: 1025px) {
