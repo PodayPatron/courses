@@ -1740,6 +1740,10 @@ h6 {
   justify-content: center;
 }
 
+.full-screen {
+  width: 100%;
+}
+
 input[type=text],
 input[type=tel],
 input[type=password],
@@ -2626,7 +2630,8 @@ small {
 .pre-footer {
   margin-bottom: 40px;
 }
-.pre-footer .container {
+
+.container-border-line {
   padding-top: 46px;
   padding-bottom: 46px;
   border-top: 1px solid rgba(16, 16, 16, 0.05);
@@ -2743,8 +2748,24 @@ small {
     margin-bottom: 25px;
   }
 
+  .blog {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
   .blog .row > [class*=col-] {
     margin-bottom: 30px;
+  }
+
+  .subscribe .row > [class*=col-] {
+    margin-bottom: 30px;
+  }
+
+  .pre-footer .row > [class*=col-] {
+    margin-bottom: 25px;
+  }
+
+  .pre-foot-form input[type=text] {
+    margin-left: 0;
   }
 }
 @media (max-width: 770px) {
@@ -2767,6 +2788,21 @@ small {
 
   .img-inner-title {
     font-size: 28px;
+  }
+
+  .pre-foot-form {
+    flex-wrap: wrap;
+  }
+  .pre-foot-form input[type=text] {
+    margin-bottom: 25px;
+  }
+  .pre-foot-form input[type=submit] {
+    margin-left: 0;
+  }
+
+  .container-border-line {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 580px) {
