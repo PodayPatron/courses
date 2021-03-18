@@ -86,7 +86,7 @@ td:last-child {
 }
 
 td a, th a {
-  padding: 10px;
+  padding: 0px;
 }
 
 @media (max-width: 600px) {
@@ -118,4 +118,37 @@ td a, th a {
   td:last-child {
     width: 70%;
   }
+}
+
+.cta {
+  width: 140px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-8 {
+  border: 3px solid transparent;
+  text-align: center;
+  perspective: 100px;
+
+}
+
+.cta-8:hover {
+  border: 3px solid rgb(243, 233, 97);
+  animation-name: cta-8;
+  border-style: ridge;
+  animation-duration: 2s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+}
+
+@keyframes cta-8 {
+  0% {box-shadow: 0px 0px 10px rgb(233, 132, 132);border-style: inset;opacity:.5}
+  25% {}
+  50% {box-shadow: 0px 0px 30px rgb(122, 74, 74);opacity:1;}
+  75% {}
+  100% {box-shadow: 0px 0px 10px rgb(146, 22, 22);opacity:.5}
 }
