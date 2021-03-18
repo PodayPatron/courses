@@ -2261,10 +2261,11 @@ small {
   display: inline-block;
   padding: 2px 4px;
   color: rgba(16, 16, 16, 0.7);
+  border-bottom: 2px solid rgba(218, 138, 103, 0);
 }
 .tabs-menu li.active a, .tabs-menu li:hover a {
-  color: #101010;
-  border-bottom: 2px solid red;
+  color: rgba(16, 16, 16, 0.9);
+  border-bottom: 2px solid rgba(218, 138, 103, 0.9);
 }
 .tabs-menu li:last-child {
   margin-right: 0;

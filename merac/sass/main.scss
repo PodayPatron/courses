@@ -798,19 +798,22 @@ small {
 		margin-right: 23px;
 		list-style: none;
 		margin-bottom: 0;
+		
 
 		a {
 			display: inline-block;
 			padding: 2px 4px;
 			color:rgba(16, 16, 16, 0.7);
+			border-bottom: 2px solid rgb(218, 138, 103, 0.0);
 		}
 
 		&.active,
 		&:hover {
 
 			a {
-				color:rgba(16, 16, 16,);
-				border-bottom: 2px solid red;
+				color:rgba(16, 16, 16, 0.9);
+				border-bottom: 2px solid rgb(218, 138, 103, 0.9);
+				
 			}
 		}
 
