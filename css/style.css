@@ -67,7 +67,8 @@ td, th {
 th {
   position: sticky;
   top: -1px;
-  background-color: #f7f7f7;
+  background-color: #dbdbdb;
+  z-index: 10;
 }
 
 th:first-child,
