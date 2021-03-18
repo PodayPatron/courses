@@ -854,7 +854,8 @@ small {
 .img-inner-block-product,
 .category-wrap,
 .promo-inner,
-.subscribe-inner-img {
+.subscribe-inner-img,
+.art-img {
 	position: relative;
 }
 
@@ -1160,6 +1161,10 @@ small {
 .blog-title {
 	line-height: 1.6;
 	margin-bottom: 15px;
+	
+	a {
+		color: inherit;
+	}
 }
 
 .continue,
@@ -1168,15 +1173,27 @@ small {
 	font-weight: 600;
 }
 
+.art-img {
+
+	> a {
+
+		&::after {
+
+			@include link();
+		}	
+	}
+}
+
 .article-footer {
 	display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .continue {
 
 	a {
+		display: flex;
+		align-items: center;
 		padding: 10px;
 		font-size: 14px;
 		color: rgba(16, 16, 16, 0.8);

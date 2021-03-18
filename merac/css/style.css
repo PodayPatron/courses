@@ -2303,7 +2303,8 @@ small {
 .img-inner-block-product,
 .category-wrap,
 .promo-inner,
-.subscribe-inner-img {
+.subscribe-inner-img,
+.art-img {
   position: relative;
 }
 
@@ -2577,6 +2578,9 @@ small {
   line-height: 1.6;
   margin-bottom: 15px;
 }
+.blog-title a {
+  color: inherit;
+}
 
 .continue,
 .blog-title,
@@ -2584,13 +2588,23 @@ small {
   font-weight: 600;
 }
 
+.art-img > a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .article-footer {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .continue a {
+  display: flex;
+  align-items: center;
   padding: 10px;
   font-size: 14px;
   color: rgba(16, 16, 16, 0.8);
