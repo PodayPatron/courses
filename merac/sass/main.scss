@@ -334,6 +334,16 @@ small {
 	color:rgba(255, 255, 255, 0.4);
 }
 
+.respon-btn-plus {
+	padding: 10px 16px;
+	display: none;
+	color:rgba(16, 16, 16, 0.7);
+
+	&:hover {
+		color:rgba(16, 16, 16);
+	}
+}
+
 // ------------------------------------------
 // HEADER MAIN
 // ------------------------------------------
@@ -373,7 +383,6 @@ small {
 		padding-right: 140px;
 		
 	}
-	
 }
 
 .header-select {
@@ -403,8 +412,8 @@ small {
 	height: 40px;
 	padding-left: 15px;
     padding-right: 0;
-
 }
+
 .form-btn {
 	position: absolute;
 	left: 0;
@@ -427,7 +436,6 @@ small {
 	margin-right: 10px;
 	font-size: 18px;
 }
-
 
 // ------------------------------------------
 // HEADER COLUMS
@@ -459,7 +467,6 @@ small {
 	}
 }
 
-
 // ------------------------------------------
 // MAIN NAV
 // ------------------------------------------
@@ -481,7 +488,7 @@ small {
 
 		&.active,
 		&:hover {
-		
+
 			.dropdown {
 				opacity: 1;
 				visibility: visible;
@@ -542,9 +549,9 @@ small {
 		&.active,
 		&:hover {
 
-				&::after {
-					opacity: 1;
-				}
+			&::after {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -605,7 +612,6 @@ small {
 	}
 }
 
-
 .info-box {
 	display: flex;
 
@@ -646,9 +652,12 @@ small {
 
 .slider-product {
 	position: relative;
-	
+	margin-left: 296px;
+
 	img {
 		min-height: 480px;
+		object-fit: cover;
+		object-position: center;
 	}
 }
 
@@ -658,10 +667,13 @@ small {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: 40px;
 	display: flex;
 	align-items: center;
 	z-index: 1;
+}
+
+.inner-block-padding {
+	padding: 40px;
 }
 
 .img-inner-title {
@@ -704,6 +716,61 @@ small {
 	&.another-style {
 		background-color: #D7575E;
 	}
+}
+
+.page-slider {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	padding-left: 48px;
+	padding-bottom: 30px;
+	font-family: 'Spartan', sans-serif;
+	font-weight: 500;
+
+	i {
+		color:  rgba(255, 255, 255, 0.7);
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+	.fa-chevron-right {
+		padding-left: 5px;
+	}
+
+	.fa-chevron-left {
+		padding-right: 5px;
+	}
+}
+
+.check-page {
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.2);
+	padding-right: 7px;
+	padding-left: 7px;
+	cursor: pointer;
+
+	&.active {
+		font-size: 20px;
+		color:  rgba(255, 255, 255, 0.7);
+	}
+
+	&:hover {
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+
+.check-page,
+.img-inner-block-product,
+.img-inner-btn,
+.inner-panel-subscribe,
+.respon-btn-plus,
+.likes,
+.coments {
+	transition: .2s all linear;
 }
 
 // ------------------------------------------
@@ -782,12 +849,15 @@ small {
 	color:  #da8a67;
 }
 
-
 .main-panel {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 38px;
+}
+
+.prod-block-title {
+	padding-right: 15px;
 }
 
 .tabs-menu {
@@ -870,7 +940,6 @@ small {
     bottom: 0;
 	opacity: 0;
 	visibility: hidden;
-	transition: .2s all linear;
 }
 
 .inner-panel {
@@ -892,16 +961,10 @@ small {
 			margin-right: 0;
 		}
 	}
-
 }
 
 .img-inner-btn {
-	padding: 0px 10px;
-	transition: all .2s linear;
-
-	&.inner-btn-mini {
-		padding: 0px 5px;
-	}
+	padding: 10px 15px;
 
 	&:hover {
 		color: #da8a67;
@@ -1094,10 +1157,7 @@ small {
 }
 
 .rev-info-box {
-	padding-top: 40px;
-	padding-bottom: 40px;
-    padding-left: 17px;
-    padding-right: 17px;
+	padding: 40px 17px;
 	background-color: #fff;
 }
 
@@ -1272,6 +1332,7 @@ small {
 }
 
 .subscribe-inner-img {
+	
 
 	> a {
 
@@ -1309,7 +1370,6 @@ small {
     align-items: flex-end;
 	opacity: 0;
 	visibility: hidden;
-	transition: all .2s linear;
 }
 
 .likes,
@@ -1317,7 +1377,6 @@ small {
 	color: rgb(255, 255, 255, 0.8);
 	z-index: 2;
 	cursor: pointer;
-	transition: all .2s linear;
 
 	&:hover {
 		color: rgb(201, 68, 235);
@@ -1397,6 +1456,7 @@ small {
 }
 
 .vertical-menu-foot {
+	padding-left: 0;
 	
 	li {
 		list-style: none;
@@ -1442,29 +1502,52 @@ small {
 	}
 }
 
-
-
 // ------------------------------------------------------------------------------------------------
 // MEDIA
 // ------------------------------------------------------------------------------------------------
 
 @media(max-width: 1025px) {
 
-	.header-top {
+	.header-top,
+	.header-bottom,
+	.sign-box {
 		display: none;
 	}
 
-	.header-main {
-		padding-top: 20px;
+	.burger,
+	.respon-btn-plus {
+		display: block;
 	}
 
-	
+	.slider-product {
+		margin-left: 0;
+		
+		img {
+			min-height: auto;
+		}
+	}
+
+	.inner-panel {
+
+		.btn {
+			display: none;
+		}
+	}
 }
 
 @media(max-width:991px) {
 
-	.intro {
+	.intro,
+	.category,
+	.reviews,
+	.subscribe {
 		margin-bottom: 50px;
+	}
+
+	.category,
+	.reviews {
+		padding-top: 50px;
+    	padding-bottom: 50px;
 	}
 
 	.main-panel {
@@ -1487,32 +1570,9 @@ small {
 		margin-bottom: 35px;
 	}
 
-	.header-bottom {
-		display: none;
-	}
-
-	.header-main {
-
-		.header-info-box {
-			display: none;
-		}
-	}
-
-	.burger {
-		display: block;
-	}
-
-	.slider-product {
-
-		img {
-			min-height: auto;
-		}
-	}
-
-	.category {
-		padding-top: 55px;
-    	padding-bottom: 55px;
-    	margin-bottom: 60px;
+	.category,
+	.blog,
+	.subscribe {
 
 		.row {
 
@@ -1531,10 +1591,9 @@ small {
 		}
 	}
 
-	.reviews {
-		padding-top: 50px;
-    	padding-bottom: 50px;
-		margin-bottom: 55px;
+	.reviews,
+	.pre-footer,
+	.footer-general {
 
 		.row {
 
@@ -1547,33 +1606,6 @@ small {
 	.blog {
 		padding-bottom: 30px;
 		margin-bottom: 30px;
-
-		.row {
-
-			> [class*= col-] {
-				margin-bottom: 30px;
-			}
-		}
-	}
-
-	.subscribe {
-
-		.row {
-
-			> [class*= col-] {
-				margin-bottom: 30px;
-			}
-		}
-	}
-
-	.pre-footer {
-
-		.row {
-
-			> [class*= col-] {
-				margin-bottom: 25px;
-			}
-		}
 	}
 
 	.pre-foot-form {
@@ -1582,19 +1614,7 @@ small {
 			margin-left: 0;
 		}
 	}
-
-	.footer-general {
-
-		.row {
-
-			> [class*= col-] {
-				margin-bottom: 25px;
-			}
-		}
-	}
 }
-
-
 
 @media(max-width: 770px) {
 
@@ -1612,6 +1632,13 @@ small {
 }
 
 @media(max-width: 660px) {
+
+	.header-main {
+
+		.header-row-inner {
+			height: 75px;
+		}
+	}
 
 	.header-search {
 		display: none;
@@ -1640,7 +1667,12 @@ small {
 }
 
 @media(max-width: 580px) {
-	.img-inner-block {
+
+	.img-inner-title {
+		font-size: 18px;
+	}
+
+	.img-inner-suptitle {
 		display: none;
 	}
 }
