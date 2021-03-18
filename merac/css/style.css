@@ -1782,6 +1782,7 @@ button {
   padding: 10px 20px;
   outline: 0;
   text-decoration: none;
+  font-size: 14px;
 }
 
 ol li {
@@ -1861,7 +1862,7 @@ small {
 
 .header-col-center {
   width: 100%;
-  max-width: 600px;
+  max-width: 615px;
   margin-left: 8px;
   padding-right: 15px;
 }
@@ -1983,9 +1984,6 @@ small {
 }
 
 .main-nav-vertical {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
   min-width: 277px;
   padding-left: 0;
 }
@@ -1995,7 +1993,6 @@ small {
   margin-bottom: 0;
 }
 .main-nav-vertical li a {
-  display: block;
   color: inherit;
   display: flex;
   align-items: center;
@@ -2009,6 +2006,7 @@ small {
   display: flex;
   justify-content: space-between;
   padding: 19px;
+  padding-right: 24px;
 }
 .inner-link > i {
   font-size: 13px;
@@ -2027,7 +2025,6 @@ small {
 .main-nav {
   display: flex;
   list-style: none;
-  margin-bottom: 0;
   padding-left: 0;
 }
 .main-nav li {
@@ -2037,8 +2034,22 @@ small {
 }
 .main-nav li a {
   display: inline-block;
-  padding: 15px;
+  padding: 16px;
   color: inherit;
+}
+.main-nav li::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -3px;
+  height: 3px;
+  background-color: #DA8A67;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.main-nav li.active::after, .main-nav li:hover::after {
+  opacity: 1;
 }
 
 .dropdown {
@@ -2089,11 +2100,27 @@ small {
 .info-box.info-box-verical {
   flex-direction: column;
 }
-.info-box.header-info-box {
+
+.header-info-box {
+  margin-right: 26px;
+}
+
+.contact-box {
+  margin-right: 22px;
+}
+
+.sign-box {
   margin-right: 20px;
+}
+
+.header-info-box,
+.contact-box,
+.sign-box {
   cursor: pointer;
 }
-.info-box.header-info-box:last-child {
+.header-info-box:last-child,
+.contact-box:last-child,
+.sign-box:last-child {
   margin-right: 0;
 }
 
