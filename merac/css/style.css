@@ -2536,6 +2536,16 @@ small {
   bottom: 0;
   z-index: 1;
 }
+.promo-inner:hover .img-scale img {
+  transform: scale(1.2);
+}
+
+.img-scale {
+  overflow: hidden;
+}
+.img-scale img {
+  transition: all 0.5s ease;
+}
 
 .promo-inner-sub {
   font-family: "Rubik", sans-serif;
@@ -2561,6 +2571,7 @@ small {
   bottom: 0;
   display: flex;
   align-items: center;
+  z-index: 3;
 }
 
 .wrap-promo-inner-block {
@@ -2675,6 +2686,10 @@ small {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
+}
+.art-img:hover .img-scale img {
+  transform: scale(1.2);
 }
 
 .article-footer {

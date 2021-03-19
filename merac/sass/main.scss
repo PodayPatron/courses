@@ -1109,6 +1109,24 @@ small {
 			z-index: 1;
 		}
 	}
+
+	&:hover {
+
+		.img-scale {
+
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+.img-scale {
+	overflow: hidden;
+
+	img {
+		transition: all 0.5s ease;
+	}
 }
 
 .promo-inner-sub {
@@ -1135,6 +1153,7 @@ small {
 	bottom: 0;
 	display: flex;
 	align-items: center;
+	z-index: 3;
 }
 
 .wrap-promo-inner-block {
@@ -1262,7 +1281,18 @@ small {
 		&::after {
 
 			@include link();
+			z-index: 1;
 		}	
+	}
+
+	&:hover {
+
+		.img-scale {
+
+			img {
+				transform: scale(1.2);
+			}
+		}
 	}
 }
 
@@ -1401,6 +1431,7 @@ small {
 		color: rgb(201, 68, 235);
 	}
 }
+
 
 // ------------------------------------------------------------------------------------------------
 // PRE-FOOTER
