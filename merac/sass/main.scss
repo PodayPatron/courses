@@ -186,21 +186,8 @@ input[type="email"],
 input[type="date"],
 input[type="time"],
 input[type="url"],
-input[type="submit"],
 select {
 	height: 40px;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="password"],
-input[type="number"],
-input[type="email"],
-input[type="date"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
 	width: 100%;
 	outline: none;
 	border: 2px solid rgba(16, 16, 16, 0.05);
@@ -208,9 +195,19 @@ select {
 	padding-right: 20px;
 }
 
+textarea {
+	width: 100%;
+	padding: 20px;
+	border: 2px solid rgba(16, 16, 16, 0.05);
+	outline: none;
+}
+
+.btn,
 input[type="button"],
 input[type="submit"],
 button {
+	background-color:#DA8A67;
+	color: #FFF;
 	border: 2px solid rgba(16, 16, 16, 0.05);
 	border-radius: 0;
 	padding: 10px 20px;
@@ -236,6 +233,7 @@ ul {
 ol,
 ul {
 	padding-left: 40px;
+	margin-bottom: 20px;
 	
 	li {
 		margin-bottom: 10px;
@@ -473,6 +471,7 @@ small {
 
 .main-nav-vertical {
     min-width: 277px;
+	margin-bottom: 0;
 	padding-left: 0;
 
 	li {
@@ -522,6 +521,7 @@ small {
 	display: flex;
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 0;
 
 	li {
 		position: relative;
@@ -789,11 +789,7 @@ small {
 
 .btn {
 	display: inline-block;
-	background-color:#DA8A67;
-	color: #FFF;
 	padding: 11px 31px;
-	font-weight: 600;
-	font-size: 14px;
 	font-weight: 600;
 	white-space: nowrap;
 
@@ -873,6 +869,7 @@ small {
 .tabs-menu {
 	display: flex;
 	padding-left: 0;
+	margin-bottom: 0;
 
 	li {
 		margin-right: 23px;
@@ -1069,8 +1066,8 @@ small {
 // PROMO
 // ------------------------------------------------------------------------------------------------
 
-.promo {
-	margin-bottom: 60px;
+.custom-row {
+	margin-bottom: 40px;
 }
 
 .promo-block-title,
@@ -1087,17 +1084,14 @@ small {
 	margin: 0 auto;
 }
 
-.flex-block {
-	display: flex;
-	align-items: center;
-	margin-left: -15px;
-	margin-right: -15px;
-	margin-bottom: 90px;
-}
-
-.col-flex {
+.custom-col-20 {
+	-webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
 	padding-left: 15px;
-    padding-right: 15px;
+	padding-right: 15px;
 }
 
 .promo-inner {
@@ -1507,6 +1501,7 @@ small {
 
 .vertical-menu-foot {
 	padding-left: 0;
+	margin-bottom: 0;
 	
 	li {
 		list-style: none;
@@ -1645,12 +1640,14 @@ small {
 		}
 	}
 
-	.flex-block {
-		flex-direction: column;
-		margin-bottom: 40px;
+	.promo {
 
-		> .col-flex {
-			margin-bottom: 25px;
+		.custom-row {
+			margin-bottom: 35px;
+
+			> .custom-col-20 {
+				margin-bottom: 25px;
+			}
 		}
 	}
 
@@ -1676,6 +1673,14 @@ small {
 		input[type="text"] {
 			margin-left: 0;
 		}
+	}
+
+	.custom-col-20 {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 
