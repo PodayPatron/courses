@@ -2111,7 +2111,16 @@ small {
 }
 
 .header-info-box {
-  margin-right: 26px;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+.header-info-box:last-child {
+  padding-right: 0;
+}
+
+.box-border {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-box {
