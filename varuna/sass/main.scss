@@ -478,7 +478,6 @@ u {
 	display: flex;
 	align-items: center;
 	overflow-x: hidden;
-	margin-bottom: 74px;
 }
 
 .intro-main-text {
@@ -543,12 +542,26 @@ u {
 // CATEGORIES
 // ------------------------------------------------------------------------------------------------
 
-.block-title {
+.category {
+	text-align: center;
+	padding-top: 74px;
+	padding-bottom: 135px;
+}
 
+.category-block-title {
+	margin-bottom: 50px;
+}
+
+.main-title {
+	font-weight: 700;
 }
 
 .main-subtitle {
 	margin-bottom: 0;
+}
+
+.categ-img {
+	margin-bottom: 22px;
 }
 
 
