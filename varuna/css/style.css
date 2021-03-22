@@ -2074,5 +2074,14 @@ u {
     display: block;
   }
 }
+@media (max-width: 991px) {
+  .category {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .category .row [class*=col-] {
+    margin-bottom: 25px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
