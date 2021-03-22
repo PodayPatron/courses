@@ -1,3 +1,269 @@
 @import './bootstrap-grid.scss';
 @import './reset.scss';
 
+// ------------------------------------------
+// SITE
+// ------------------------------------------
+
+//**** MIXINS ****//
+
+@mixin bg-img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin link {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+//**** BASE STYLE ****//
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color:   rgb(51, 51, 51, 0.8);
+	line-height: 1.4;
+}
+
+.container {
+	width: 100%;
+	max-width: 1210px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+img {
+	height: auto;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	transition: all .2s linear;
+}
+
+p {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+//**** TITLES BASE ****//
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Mulish', sans-serif;
+	font-weight: 500;
+	color:  #0d3674;
+	margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+h5 {
+	font-size: 20px
+}
+
+h6 {
+	font-size: 15px;
+}
+
+// ------------------------------------------
+// COLOR SCHEME LIGHT
+// ------------------------------------------
+
+.color-scheme-light {
+	color: #fff;
+
+	h1,h2,h3,h4,h5,h6 {
+		color: #FFF;
+	}
+
+	p, ul {
+		color: rgba(255,255,255,.9);
+	}
+
+	input[type="submit"] {
+		color: #fff;
+	}
+}
+
+// ------------------------------------------
+// HELPER CLASSES
+// ------------------------------------------
+
+.text-center {
+	text-align: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.light-background {
+	background-color: rgb(247, 248, 250);
+}
+
+.full-screen {
+	width: 100%;
+}
+
+//**** BASE INPUT ****//
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+select {
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border: 1px solid rgba(33, 33, 33, 0.1);
+	background-color: #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid rgba(33, 33, 33, 0.1);
+	outline: none;
+	background-color: #ffffff;
+}
+
+//**** BASE BTN ****//
+
+.btn,
+input[type="button"],
+input[type="submit"],
+button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	background-color: #EB2E39;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 0;
+	outline: 0;
+	border: 0;
+	transition: all .2s linear;
+
+	&:hover {
+		background-color:  #0d3674;
+	}
+}
+
+//**** BASE LISTS ****//
+
+ol {
+
+	li {
+		list-style: decimal;
+	}
+}
+
+ul {
+
+	li {
+		list-style: disc;
+	}
+}
+
+ol,
+ul {
+	padding-left: 40px;
+	margin-bottom: 20px;
+	
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+//**** BASE TABLE ****//
+
+table {	
+	color: #333;
+	background: white;
+	border: 1px solid grey;
+	font-size: 12pt;
+
+	thead th,
+	tfoot th {
+		color: #777;
+		background: rgba(0,0,0,.1);
+	}
+
+	caption {
+		padding:15px;
+	}
+
+	th,
+	td {
+		padding: 15px;
+		border: 1px solid lightgrey;
+	}
+
+	th,
+	td {
+		padding: 15px;
+		border: 1px solid lightgrey;
+	}
+}
+
+//**** BASE OTHER ****//
+
+a {
+	color:#425efc;
+}
+
+strong {
+	font-weight: 700;
+}
+
+small {
+	font-size: 80%;
+}
+
+em {
+	font-style: italic;
+}
+
+u {
+	text-decoration: underline;
+}
