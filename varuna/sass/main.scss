@@ -598,13 +598,6 @@ u {
     margin-left: -210px;
     display: flex;
     align-items: center;
-
-	img {
-		// width: 100%;
-		// min-height: 880px;
-		// object-fit: cover;
-		// object-position: center;
-	}
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -715,7 +708,6 @@ u {
 	img {
 		transition: all .4s ease-in-out;
 	}
-
 }
 
 .product-img-title {
@@ -736,9 +728,76 @@ u {
 }
 
 // ------------------------------------------------------------------------------------------------
-// MEDIA
+// DESIGN
 // ------------------------------------------------------------------------------------------------
 
+.design {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.design-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.design-col-inner {
+	margin-bottom: 60px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.design-col-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.design-inner-title {
+	margin-bottom: 0;
+}
+
+.design-inner-suptitle {
+	max-width: 310px;
+	margin: 0px 0px 0px auto;
+	text-align: right;
+}
+
+.col-title-left {
+	justify-content: flex-start;
+}
+
+.col-suptitle-left {
+	margin-left: 0;
+	text-align: left;
+}
+
+.design-img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+    margin-top: -120px;
+    margin-bottom: -120px;
+}
+
+// ------------------------------------------------------------------------------------------------
+// ARTICLES
+// ------------------------------------------------------------------------------------------------
+
+.articles {
+	padding-top: 210px;
+}
+
+// ------------------------------------------------------------------------------------------------
+// MEDIA
+// ------------------------------------------------------------------------------------------------
 
 @media(min-width: 1330px) {
 
@@ -851,7 +910,7 @@ u {
 		padding-top: 65px;
 		padding-bottom: 65px;
 	}
-	
+
 }
 
 @media(max-width: 440px) {
