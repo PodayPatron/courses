@@ -2139,12 +2139,14 @@ u {
   display: flex;
   align-items: center;
   min-height: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .travel-img {
   position: relative;
-  margin-top: -40px;
-  margin-bottom: -40px;
+  margin-top: -90px;
+  margin-bottom: -90px;
 }
 
 .travel-main-title,
@@ -2155,6 +2157,7 @@ u {
 
 .products {
   padding-top: 125px;
+  padding-bottom: 125px;
 }
 
 .product-main-title {
@@ -2255,6 +2258,32 @@ u {
   }
   .category .row [class*=col-] {
     margin-bottom: 25px;
+  }
+
+  .travel-info .row [class*=col-] {
+    margin-bottom: 25px;
+  }
+  .travel-info .row [class*=col-]:last-child {
+    margin-bottom: 0;
+  }
+
+  .travel-img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .travel-main-title {
+    max-width: 100%;
+  }
+
+  .travel-main-title,
+.travel-text {
+    margin: 0;
+  }
+
+  .products {
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 @media (max-width: 440px) {
