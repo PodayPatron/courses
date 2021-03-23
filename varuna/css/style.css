@@ -1655,6 +1655,9 @@ h1, h2, h3, h4, h5, h6 {
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
   margin-bottom: 0;
 }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #0d3674;
+}
 
 h1 {
   font-size: 70px;
@@ -1707,6 +1710,17 @@ h6 {
 
 .full-screen {
   width: 100%;
+}
+
+.spacing-col-20 {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+}
+.spacing-col-20 > [class*=col-] {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 input[type=text],
@@ -1764,6 +1778,22 @@ input[type=button]:hover i,
 input[type=submit]:hover i,
 button:hover i {
   color: #fff;
+}
+
+.btn.btn-transparent {
+  background: transparent;
+  color: #333;
+  padding-left: 0;
+}
+.btn.btn-transparent i {
+  transition: 0.2s all linear;
+  color: #eb2e39;
+}
+.btn.btn-transparent:hover {
+  color: #0d3674;
+}
+.btn.btn-transparent:hover i {
+  color: #0d3674;
 }
 
 ol li {
@@ -2081,6 +2111,10 @@ u {
   padding-bottom: 135px;
 }
 
+.block-title {
+  text-align: center;
+}
+
 .category-block-title {
   margin-bottom: 50px;
 }
@@ -2096,8 +2130,79 @@ u {
   opacity: 1;
 }
 
-.categ-img-title a {
+.categ-img-title a,
+.travel-text-title a {
   color: #333333;
+}
+
+.travel-info {
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+
+.travel-img {
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+.travel-main-title,
+.travel-text {
+  max-width: 310px;
+  margin: 0px 0px 0px auto;
+}
+
+.products {
+  padding-top: 125px;
+}
+
+.product-main-title {
+  margin-bottom: 5px;
+}
+
+.products-block-title {
+  margin-bottom: 30px;
+}
+
+.product-inner {
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+.product-inner:hover .product-img img {
+  transform: scale(1.1);
+}
+
+.product-inner-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+}
+.product-img img {
+  transition: all 0.4s ease-in-out;
+}
+
+.product-img-title {
+  max-width: 215px;
+  margin: 0 auto;
+}
+
+.product-img-suptitle {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  color: #eb2e39;
+  font-size: 16px;
 }
 
 @media (min-width: 1330px) {

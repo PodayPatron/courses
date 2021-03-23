@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6 {
     &:last-child {
         margin-bottom: 0;
     }
+
+	a {
+		color:  #0d3674;
+	}
 }
 
 h1 {
@@ -140,6 +144,18 @@ h6 {
 	width: 100%;
 }
 
+.spacing-col-20 {
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -20px;
+
+	> [class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+}
+
 //**** BASE INPUT ****//
 
 input[type="text"],
@@ -195,6 +211,29 @@ button {
 			color: #fff;
 		}
 	}
+}
+
+.btn {
+
+	&.btn-transparent {
+		background: transparent;
+    	color: #333;
+    	padding-left: 0;
+
+		i {
+			transition: .2s all linear;
+			color:  #eb2e39;
+		}
+		
+		&:hover {
+			color: #0d3674;
+
+			i {
+				color: #0d3674;
+			}
+		}
+	}
+
 }
 
 //**** BASE LISTS ****//
@@ -578,6 +617,10 @@ u {
 	padding-bottom: 135px;
 }
 
+.block-title {
+	text-align: center;
+}
+
 .category-block-title {
 	margin-bottom: 50px;
 }
@@ -594,11 +637,99 @@ u {
 	}
 }
 
-.categ-img-title {
+.categ-img-title,
+.travel-text-title {
 	
 	a {
 		color: #333333;
 	}
+}
+
+// ------------------------------------------------------------------------------------------------
+// TRAVEL INFO
+// ------------------------------------------------------------------------------------------------
+
+.travel-info {
+	display: flex;
+    align-items: center;
+	min-height: 300px;
+}
+
+.travel-img {
+	position: relative;
+    margin-top: -40px;
+	margin-bottom: -40px;
+}
+
+.travel-main-title,
+.travel-text {
+	max-width: 310px;
+	margin: 0px 0px 0px auto;
+}
+
+// ------------------------------------------------------------------------------------------------
+// PRODUCTS
+// ------------------------------------------------------------------------------------------------
+
+.products {
+	padding-top: 125px;
+}
+
+.product-main-title {
+	margin-bottom: 5px;
+}
+
+.products-block-title {
+	margin-bottom: 30px;
+}
+
+.product-inner {
+	height: 100%;
+	text-align: center;
+	background-color: #fff;
+
+	&:hover {
+		
+		.product-img {
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.product-inner-text	{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 25px;
+}
+
+.product-img {
+	position: relative;
+	overflow: hidden;
+
+	img {
+		transition: all .4s ease-in-out;
+	}
+
+}
+
+.product-img-title {
+	max-width: 215px;
+	margin: 0 auto;
+}
+
+.product-img-suptitle {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.price {
+	font-family: 'Mulish', sans-serif;
+	font-weight: 700;
+	color:  #eb2e39;
+	font-size: 16px;
 }
 
 // ------------------------------------------------------------------------------------------------
