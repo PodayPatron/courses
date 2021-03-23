@@ -2131,12 +2131,34 @@ u {
     margin-left: 0;
   }
 
+  .wrapper-main-text {
+    padding-right: 40px;
+  }
+
+  .intro-slider img {
+    max-width: 330px;
+  }
+
+  .col-intro-text,
+.col-slider {
+    min-height: 520px;
+  }
+
   .category {
     padding-top: 65px;
     padding-bottom: 65px;
   }
   .category .row [class*=col-] {
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 440px) {
+  .intro-main-title {
+    font-size: 45px;
+  }
+
+  .intro-slider img {
+    max-width: 230px;
   }
 }
 
