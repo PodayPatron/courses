@@ -1635,6 +1635,9 @@ a {
   text-decoration: none;
   transition: all 0.2s linear;
 }
+a:hover {
+  opacity: 0.8;
+}
 
 p {
   margin-bottom: 20px;
@@ -1645,7 +1648,7 @@ p:last-child {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Mulish", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   color: #0d3674;
   margin-bottom: 30px;
 }
@@ -1994,19 +1997,40 @@ u {
 
 .intro {
   position: relative;
+}
+
+.col-intro-text {
   background: url(../img/veruna-slider-img-background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.col-slider {
+  position: relative;
+  background: url(../img/veruna-slider-img-1-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.col-intro-text,
+.col-slider {
   min-height: 880px;
+}
+
+.wrapper-main-text {
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 115px;
+  padding-bottom: 50px;
+  height: 100%;
   display: flex;
-  align-items: center;
-  overflow-x: hidden;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .intro-main-text {
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin-bottom: 28px;
   max-width: 530px;
 }
@@ -2041,6 +2065,16 @@ u {
   margin-right: 0;
 }
 
+.intro-slider {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: -210px;
+  display: flex;
+  align-items: center;
+}
 .category {
   text-align: center;
   padding-top: 74px;
@@ -2051,10 +2085,6 @@ u {
   margin-bottom: 50px;
 }
 
-.main-title {
-  font-weight: 700;
-}
-
 .main-subtitle {
   margin-bottom: 0;
 }
@@ -2062,7 +2092,19 @@ u {
 .categ-img {
   margin-bottom: 22px;
 }
+.categ-img a {
+  opacity: 1;
+}
 
+.categ-img-title a {
+  color: #333333;
+}
+
+@media (min-width: 1330px) {
+  .wrapper-main-text {
+    padding-left: 180px;
+  }
+}
 @media (max-width: 1100px) {
   .header-col-left,
 .main-nav,
@@ -2073,8 +2115,22 @@ u {
   .burger {
     display: block;
   }
+
+  .intro-main-title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 1024px) {
+  .col-intro-text,
+.col-slider {
+    min-height: 770px;
+  }
 }
 @media (max-width: 991px) {
+  .intro-slider {
+    margin-left: 0;
+  }
+
   .category {
     padding-top: 65px;
     padding-bottom: 65px;
