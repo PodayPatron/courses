@@ -911,6 +911,39 @@ u {
 		padding-bottom: 65px;
 	}
 
+	//**** DESIGN ****//
+
+	.design {
+
+		.row {
+
+			> [class*="col-"] {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.design-col-title {
+		justify-content: flex-start;
+	}
+
+	.design-inner-suptitle {
+		margin: 0;
+		text-align: left;
+	}
+
+	.design-img {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.design-col-inner {
+		margin-bottom: 30px;
+	}
+
 }
 
 @media(max-width: 440px) {
