@@ -1075,6 +1075,10 @@ u {
 		align-items: flex-start;
 	}
 
+	.footer-nav {
+		display: block;
+	}
+
 	.footer-col-left {
 		margin-bottom: 20px;
 	}
@@ -1236,12 +1240,6 @@ u {
 		min-height: auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
-	}
-
-	//**** FOOTER GENERAL ****//
-
-	.footer-nav {
-		display: block;
 	}
 
 	//**** ARROW UP ****//
