@@ -5413,6 +5413,21 @@ u {
   margin-right: 20px;
 }
 
+.comments,
+.share {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.comments:hover,
+.share:hover {
+  color: #EB2E39;
+}
+
+.by-name {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
 .footer-general-inner {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -5457,6 +5472,7 @@ u {
   max-width: 290px;
   margin-right: 20px;
 }
+
 .copyright {
   font-size: 12px;
 }
