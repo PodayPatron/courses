@@ -1034,6 +1034,249 @@ u {
 }
 
 // ------------------------------------------------------------------------------------------------
+// PAGE SHOP
+// ------------------------------------------------------------------------------------------------
+
+// ------------------------------------------
+// SHOP-INTRO
+// ------------------------------------------
+
+.shop-intro {
+	background: url(../img/veruna-top-img.jpg);
+	@include bg-img();
+	min-height: 280px;
+}
+
+// ------------------------------------------
+// MAIN TOOLS PANEL
+// ------------------------------------------
+
+.main-tools-panel {
+	position: relative;
+	width: 100%;
+	max-width: 1380px;
+	margin: -130px  auto auto auto;
+}
+
+.shop-intro-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.shop-intro-title {
+	margin-bottom: 0;
+	margin-right: 27px;
+}
+
+.results-count,
+.breadcrumb {
+	font-size: 12px;
+}
+
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding-right: 15px;
+}
+
+.breadcrumb {
+	vertical-align: middle;
+}
+
+.breadcrumb-link {
+	color:rgba(16, 16, 16, 0.4);
+
+	&::after {
+		content: "/";
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+}
+
+.breadcrumb-last {
+	color: #333333;
+	cursor: pointer;
+}
+
+// ------------------------------------------
+// SHOP LOOP HEAD
+// ------------------------------------------
+
+.shop-loop-head {
+    margin-bottom: 45px;
+}
+
+.tabs-menu {
+	display: flex;
+	padding-left: 0;
+	margin-bottom: 0;
+
+	li {
+		margin-right: 23px;
+		list-style: none;
+		margin-bottom: 0;
+		
+
+		a {
+			display: inline-block;
+			padding: 2px 4px;
+			color:rgba(16, 16, 16, 0.7);
+			border-bottom: 2px solid rgb(218, 138, 103, 0.0);
+		}
+
+		&.active,
+		&:hover {
+
+			a {
+				color:rgba(16, 16, 16, 0.9);
+				border-bottom: 2px solid rgb(218, 138, 103, 0.9);
+				
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+.products-tabs {
+	padding-right: 15px;
+}
+
+.shop-tools {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(16, 16, 16, 0.05);
+}
+
+.filter,
+.products-tabs,
+.products-view,
+.block-check-pages {
+	display: flex;
+	align-items: center;
+}
+
+.filter {
+	color: #333333;
+	padding-right: 20px;
+
+	i {
+		margin-right: 10px;
+	}
+}
+
+.shop-tabs-menu {
+	padding-left: 20px;
+}
+
+.shop-tabs-menu,
+.grid-view {
+	border-left: 1px solid rgba(16, 16, 16, 0.05);
+} 
+
+
+.per-page-title {
+
+	&::after {
+		content: ':';
+	}
+}
+
+.per-page-border {
+
+	&::after {
+		content: '/';
+		color:rgba(16, 16, 16, 0.4);
+	}
+}
+
+.nofollow {
+	display: inline-block;
+	padding: 0 7px;
+	color:rgba(16, 16, 16, 0.4);
+
+	&.active,
+	&:hover {
+		color:rgba(16, 16, 16, 0.9);
+	}
+
+	&:last-child {
+		padding: 0;
+		margin-right: 0;
+	}
+}
+
+.grid-img {
+	padding: 0;
+	margin-right: 20px;
+
+	i {
+		font-size: 21px;
+	}
+}
+
+.products-per-page {
+	font-size: 13px;
+	margin-right: 18px;
+}
+
+.grid-view {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 18px;
+}
+
+.block-check-pages {
+	justify-content: center;
+}
+
+.pages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+    margin-right: 10px;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+
+	&.active,
+	&:hover {
+		color: #fff;
+		background-color: #DA8A67;
+
+		i {
+			color: #fff;
+		}
+	}
+
+	i {
+		transition: all .2s ease;
+		font-size: 17px;
+		color: #333333;
+	}
+
+	&.pages-num {
+		margin-left: 10px;
+    	margin-right: 10px;
+		border: 2px solid #dddddd;
+	}
+
+	&:nth-child(3) {
+		margin: 0;
+	}
+}
+
+// ------------------------------------------------------------------------------------------------
 // MEDIA
 // ------------------------------------------------------------------------------------------------
 
