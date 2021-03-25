@@ -4845,6 +4845,17 @@ button:hover i {
 .btn.btn-transparent:hover i {
   color: #0d3674;
 }
+.btn.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #fff;
+}
+.btn.btn-arrow i {
+  transition: all 0.2s linear;
+  color: rgba(51, 51, 51, 0.4);
+}
 
 ol li {
   list-style: decimal;
@@ -5610,6 +5621,11 @@ u {
   padding-right: 15px;
 }
 
+.shop-intro-inner,
+.shop-tools {
+  flex-wrap: wrap;
+}
+
 .shop-tools {
   display: flex;
   align-items: center;
@@ -5721,7 +5737,38 @@ u {
 
 .products-page-shop {
   padding-top: 82px;
+  padding-bottom: 60px;
   margin-top: -45px;
+}
+.products-page-shop .row {
+  margin-bottom: 40px;
+}
+
+.page-numbers {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-numbers li {
+  list-style: none;
+}
+.page-numbers li a {
+  padding: 13px;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.4);
+}
+.page-numbers li.active a, .page-numbers li:hover a {
+  color: #DA8A67;
+}
+.page-numbers li.active .btn-arrow i, .page-numbers li:hover .btn-arrow i {
+  color: rgba(51, 51, 51, 0.9);
+}
+
+.page-arrow-up {
+  background-color: #fff;
+  box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 1330px) {
@@ -5785,6 +5832,14 @@ u {
 
   .arrow-up {
     display: none;
+  }
+
+  .shop-intro {
+    min-height: 160px;
+  }
+
+  .main-tools-panel {
+    margin: 0;
   }
 }
 @media (max-width: 991px) {
@@ -5890,6 +5945,14 @@ u {
     width: 35px;
     height: 35px;
   }
+
+  .shop-intro-inner {
+    padding-top: 35px;
+  }
+
+  .shop-tools {
+    display: none;
+  }
 }
 @media (max-width: 440px) {
   .intro-main-title {
@@ -5898,6 +5961,10 @@ u {
 
   .intro-slider img {
     max-width: 230px;
+  }
+
+  .results-count {
+    display: none;
   }
 }
 
