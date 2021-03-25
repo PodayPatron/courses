@@ -1361,6 +1361,10 @@ u {
 	}
 }
 
+.main-single-img {
+	max-width: 660px;
+}
+
 .summary-inner {
 	padding-bottom: 25px;
 	border-bottom: 1px solid rgb(51, 51, 51, 0.1);
@@ -1527,6 +1531,35 @@ u {
 		align-items: center;
 		justify-content: center;
 	}
+}
+
+//**** ABOUT SINGLE PRODUCT ****//
+
+.block-about-single {
+	padding-top: 28px;
+}
+
+.about-single-product {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px; 
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.type,
+.type-value {
+	white-space: nowrap;
+}
+
+.border-dot {
+	height: 18px;
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-bottom: 3px dotted #3333;
 }
 
 // ------------------------------------------------------------------------------------------------
