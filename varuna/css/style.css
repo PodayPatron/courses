@@ -5797,6 +5797,7 @@ u {
 }
 
 .after-page {
+  padding-left: 15px;
   flex-direction: row-reverse;
 }
 
@@ -6137,6 +6138,14 @@ u {
 
   .shop-tools {
     display: none;
+  }
+
+  .main-single-img {
+    max-width: 100%;
+  }
+
+  .single-brand-title {
+    font-size: 40px;
   }
 }
 @media (max-width: 440px) {
