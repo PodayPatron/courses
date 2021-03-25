@@ -5532,7 +5532,7 @@ u {
   position: relative;
   width: 100%;
   max-width: 1380px;
-  margin: -130px auto 0 auto;
+  margin: -140px auto 0 auto;
 }
 
 .shop-intro-inner {
@@ -5540,10 +5540,11 @@ u {
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .shop-intro-title {
+  color: #333333;
   margin-bottom: 0;
   margin-right: 27px;
 }
@@ -5716,6 +5717,11 @@ u {
 }
 .pages:nth-child(3) {
   margin: 0;
+}
+
+.products-page-shop {
+  padding-top: 82px;
+  margin-top: -45px;
 }
 
 @media (min-width: 1330px) {
