@@ -544,14 +544,23 @@ u {
 	position: relative;
 }
 
-.intro-arrow-right,
-.intro-arrow-left {
+.arrow-right,
+.arrow-left {
 	position: absolute;
 	top: 50%;
+	z-index: 3;
+
+	i {
+		font-weight: 500;
+		transition: all .3s linear;
+	}
+}
+
+.intro-arrow-right,
+.intro-arrow-left {
 	width: 40px;
 	height: 40px;
 	background-color: #fff;
-	z-index: 3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -559,11 +568,6 @@ u {
 	transition: all .3s linear;
 	opacity: 0;
 	visibility: hidden;
-
-	i {
-		font-weight: 500;
-		transition: all .3s linear;
-	}
 
 	&:hover {
 		background-color: #EB2E39;
@@ -865,6 +869,28 @@ u {
 	justify-content: center;
     margin-top: -120px;
     margin-bottom: -120px;
+}
+
+.design-arrow-left {
+	left: 10px;
+}
+
+.design-arrow-right {
+	right: 10px;
+}
+
+.design-arrow-left,
+.design-arrow-right {
+	padding: 5px;
+	cursor: pointer;
+
+	i {
+		font-size: 19px;
+	}
+
+	&:hover {
+		color: #EB2E39;
+	}
 }
 
 // ------------------------------------------------------------------------------------------------

@@ -5099,14 +5099,23 @@ u {
   position: relative;
 }
 
-.intro-arrow-right,
-.intro-arrow-left {
+.arrow-right,
+.arrow-left {
   position: absolute;
   top: 50%;
+  z-index: 3;
+}
+.arrow-right i,
+.arrow-left i {
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+
+.intro-arrow-right,
+.intro-arrow-left {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5114,11 +5123,6 @@ u {
   transition: all 0.3s linear;
   opacity: 0;
   visibility: hidden;
-}
-.intro-arrow-right i,
-.intro-arrow-left i {
-  font-weight: 500;
-  transition: all 0.3s linear;
 }
 .intro-arrow-right:hover,
 .intro-arrow-left:hover {
@@ -5379,6 +5383,28 @@ u {
   justify-content: center;
   margin-top: -120px;
   margin-bottom: -120px;
+}
+
+.design-arrow-left {
+  left: 10px;
+}
+
+.design-arrow-right {
+  right: 10px;
+}
+
+.design-arrow-left,
+.design-arrow-right {
+  padding: 5px;
+  cursor: pointer;
+}
+.design-arrow-left i,
+.design-arrow-right i {
+  font-size: 19px;
+}
+.design-arrow-left:hover,
+.design-arrow-right:hover {
+  color: #EB2E39;
 }
 
 .blogs {
