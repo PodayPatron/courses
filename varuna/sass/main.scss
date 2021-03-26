@@ -544,6 +544,44 @@ u {
 	position: relative;
 }
 
+.intro-arrow-right,
+.intro-arrow-left {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all .3s linear;
+	opacity: 0;
+	visibility: hidden;
+
+	i {
+		font-weight: 500;
+		transition: all .3s linear;
+	}
+
+	&:hover {
+		background-color: #EB2E39;
+		
+		i {
+			color: #fff;
+		}
+	}
+}
+
+.intro-arrow-right {
+	right: 40px;
+}
+
+.intro-arrow-left {
+	left: 40px;
+}
+
 .col-intro-text {
 	background: url(../img/veruna-slider-img-background.jpg);
 	@include bg-img();
@@ -1787,6 +1825,12 @@ u {
 	.wrapper-main-text {
 		padding-left: 180px;
 	}
+
+	.intro-arrow-right,
+	.intro-arrow-left {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 @media(max-width: 1100px) {
@@ -1900,7 +1944,7 @@ u {
 
 		.row {
 
-			[class*="col-"] {
+			> [class*="col-"] {
 				margin-bottom: 25px;
 			}
 		}
@@ -1912,7 +1956,7 @@ u {
 
 		.row {
 
-			[class*="col-"] {
+			> [class*="col-"] {
 				margin-bottom: 25px;
 
 				&:last-child {
@@ -1938,14 +1982,16 @@ u {
 
 	//**** PRODUCTS ****//
 
-	.products {
-		padding-top: 65px;
-		padding-bottom: 65px;
+	.products,
+	.blogs {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 
 	//**** DESIGN ****//
 
-	.design {
+	.design,
+	.about-us-content  {
 
 		.row {
 
@@ -1979,8 +2025,6 @@ u {
 	//**** BLOGS ****//
 
 	.blogs {
-		padding-top: 60px;
-		padding-bottom: 60px;
 
 		.row {
 
@@ -2054,13 +2098,6 @@ u {
 
 	.about-us-content {
 		padding-bottom: 40px;
-		
-		.row {
-
-			> [class*="col-"] {
-				margin-bottom: 25px;
-			}
-		}
 	}
 
 	.info-about {

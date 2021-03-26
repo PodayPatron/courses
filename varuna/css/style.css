@@ -5099,6 +5099,44 @@ u {
   position: relative;
 }
 
+.intro-arrow-right,
+.intro-arrow-left {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+.intro-arrow-right i,
+.intro-arrow-left i {
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.intro-arrow-right:hover,
+.intro-arrow-left:hover {
+  background-color: #EB2E39;
+}
+.intro-arrow-right:hover i,
+.intro-arrow-left:hover i {
+  color: #fff;
+}
+
+.intro-arrow-right {
+  right: 40px;
+}
+
+.intro-arrow-left {
+  left: 40px;
+}
+
 .col-intro-text {
   background: url(../img/veruna-slider-img-background.jpg);
   background-position: center;
@@ -6130,6 +6168,12 @@ u {
   .wrapper-main-text {
     padding-left: 180px;
   }
+
+  .intro-arrow-right,
+.intro-arrow-left {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (max-width: 1100px) {
   .header-col-left,
@@ -6219,14 +6263,14 @@ u {
     padding-top: 65px;
     padding-bottom: 65px;
   }
-  .category .row [class*=col-] {
+  .category .row > [class*=col-] {
     margin-bottom: 25px;
   }
 
-  .travel-info .row [class*=col-] {
+  .travel-info .row > [class*=col-] {
     margin-bottom: 25px;
   }
-  .travel-info .row [class*=col-]:last-child {
+  .travel-info .row > [class*=col-]:last-child {
     margin-bottom: 0;
   }
 
@@ -6244,12 +6288,14 @@ u {
     margin: 0;
   }
 
-  .products {
-    padding-top: 65px;
-    padding-bottom: 65px;
+  .products,
+.blogs {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .design .row > [class*=col-] {
+  .design .row > [class*=col-],
+.about-us-content .row > [class*=col-] {
     margin-bottom: 30px;
   }
 
@@ -6274,10 +6320,6 @@ u {
     margin-bottom: 30px;
   }
 
-  .blogs {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .blogs .row > [class*=col-]:nth-child(even) {
     margin-bottom: 30px;
   }
@@ -6327,9 +6369,6 @@ u {
 
   .about-us-content {
     padding-bottom: 40px;
-  }
-  .about-us-content .row > [class*=col-] {
-    margin-bottom: 25px;
   }
 
   .info-about {
