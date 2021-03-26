@@ -5498,12 +5498,14 @@ u {
 }
 
 .comments,
-.share {
+.share,
+.filter {
   transition: all 0.2s linear;
   cursor: pointer;
 }
 .comments:hover,
-.share:hover {
+.share:hover,
+.filter:hover {
   color: #EB2E39;
 }
 
@@ -5713,6 +5715,7 @@ u {
 .filter {
   color: #333333;
   padding-right: 20px;
+  cursor: pointer;
 }
 .filter i {
   margin-right: 10px;
@@ -6385,6 +6388,14 @@ u {
     display: none;
   }
 
+  .bottle-img-effects img {
+    margin-left: 0;
+  }
+
+  .viewed-prod {
+    padding-top: 60px;
+  }
+
   .main-single-img {
     max-width: 100%;
   }
@@ -6394,7 +6405,7 @@ u {
   }
 
   .about-us-content {
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 
   .info-about {
