@@ -658,11 +658,14 @@ u {
 		
 	}
 
+	img {
+		transition: all .2s linear;
+	}
+
 	&:hover {
 
 		img {
 			transform: scale(1.1);
-			transition: all .2s linear;
 		}
 	}
 }
@@ -1011,12 +1014,7 @@ u {
 	}
 }
 
-.copy-inner {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
+.copy-inner,
 .faq {
 	display: flex;
 	align-items: center;
@@ -1520,6 +1518,7 @@ u {
 .product-meta {
 	display: flex;
     justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 40px;
 
 	span {
@@ -1603,10 +1602,22 @@ u {
 	padding-top: 50px;
 }
 
+.single-tabs-menu {
+	overflow-y: hidden;
+
+	li {
+		white-space: nowrap;
+	}
+}
+
 .main-single-tabs-menu,
 .bottle-img-effects {
 	display: flex;
 	justify-content: center;
+}
+
+.product-effects {
+	margin-bottom: 80px;
 }
 
 .main-single-tabs-menu {
