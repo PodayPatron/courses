@@ -5985,10 +5985,13 @@ u {
   white-space: nowrap;
 }
 
-.main-single-tabs-menu,
-.bottle-img-effects {
+.main-single-tabs-menu {
   display: flex;
   justify-content: center;
+}
+
+.bottle-img-effects img {
+  margin-left: 95px;
 }
 
 .product-effects {
