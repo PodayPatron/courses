@@ -5195,10 +5195,15 @@ u {
 }
 
 .categ-img {
+  position: relative;
   margin-bottom: 22px;
 }
 .categ-img a {
   opacity: 1;
+}
+.categ-img:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
 }
 
 .categ-img-title a,
@@ -5791,12 +5796,18 @@ u {
   margin-bottom: 10px;
 }
 
+.before-page-name a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .link-single-page {
   display: flex;
   align-items: center;
 }
 
 .after-page {
+  text-align: right;
   padding-left: 15px;
   flex-direction: row-reverse;
 }
@@ -5826,6 +5837,9 @@ u {
   font-size: 14px;
   color: #FFAA2A;
   margin-right: 5px;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .product-rating i:last-child {
   margin-right: 0;
@@ -5929,6 +5943,11 @@ u {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.socials-circle:hover i {
+  color: #344C8F;
 }
 
 .block-about-single {
@@ -5955,6 +5974,55 @@ u {
   margin-left: 5px;
   margin-right: 5px;
   border-bottom: 3px dotted #3333;
+}
+
+.about-single-listening {
+  padding-top: 50px;
+}
+
+.main-single-tabs-menu,
+.bottle-img-effects {
+  display: flex;
+  justify-content: center;
+}
+
+.main-single-tabs-menu {
+  margin-bottom: 78px;
+}
+
+.effects-list,
+.facts-list {
+  padding-left: 20px;
+}
+
+.services-inner-text {
+  margin-bottom: 30px;
+}
+
+.warranty {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.warran-img {
+  margin-right: 10px;
+}
+
+.warranty-inner {
+  display: flex;
+}
+
+.facts-list {
+  margin-bottom: 48px;
+}
+.facts-list li {
+  margin-bottom: 16px;
+}
+
+.viewed-prod {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 1330px) {
